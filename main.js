@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
             
             // Add a "Read More" button if a link is provided
             const readMoreHtml = item.link 
-                ? `<a href="${item.link}" class="btn pub-btn outline-btn" style="margin-top:1.5rem; display:inline-block;">Read More</a>` 
+                ? `<a href="${item.link}" class="btn primary" style="margin-top:1.5rem; display:inline-block;">Read More</a>` 
                 : "";
 
             const imageHtml = item.image
