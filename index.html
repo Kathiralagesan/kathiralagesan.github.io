@@ -1,219 +1,117 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-
-<meta charset="UTF-8">
-<title>Dr. Kathirvel Alagesan</title>
-
-<link rel="stylesheet" href="style.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dr. Kathirvel Alagesan - Head & Project Leader in Proteomics">
+    <title>Dr. Kathirvel Alagesan - CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-
-
 <body>
-
-<nav>
-
-<div class="nav-title">
-Dr. Kathirvel Alagesan
-</div>
-
-<ul>
-
-<li><a href="#about">About</a></li>
-<li><a href="#research">Research</a></li>
-<li><a href="#publications">Publications</a></li>
-<li><a href="#talks">Talks</a></li>
-<li><a href="#contact">Contact</a></li>
-
-</ul>
-
-</nav>
-
-
-<header>
-
-<div class="header-container">
-
-<img src="profile.jpg" class="profile">
-
-<div>
-
-<h1>Dr. Kathirvel Alagesan</h1>
-
-<p>
-Head & Project Leader in Proteomics
-</p>
-
-<p>
-Max Planck Unit for the Science of Pathogens  
-Berlin, Germany
-</p>
-
-<p>
-
-<a href="cv.pdf">Download CV</a>
-
-</p>
-
-</div>
-
-</div>
-
-</header>
-
-
-
-<section id="about">
-
-<h2>About</h2>
-
-<p>
-
-I am a proteomics scientist at the Max Planck Unit for the Science of Pathogens in Berlin.
-My research focuses on glycoproteomics, mass spectrometry technologies, and host–pathogen interactions.
-
-I develop high-throughput analytical workflows for protein characterization, post-translational modification analysis,
-and bioanalytical platforms supporting multidisciplinary research projects.
-
-</p>
-
-</section>
-
-
-
-<section id="research">
-
-<h2>Research</h2>
-
-<div class="card">
-
-<h3>Glycoproteomics</h3>
-
-<p>
-Developing analytical platforms for large-scale characterization of glycoproteins using LC-MS technologies.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<h3>Mass Spectrometry Method Development</h3>
-
-<p>
-Designing novel mass spectrometry workflows for glycan and glycopeptide analysis.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<h3>Host–Pathogen Interaction</h3>
-
-<p>
-Investigating the role of glycans and post-translational modifications in microbial infection biology.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<h3>Proteomics Infrastructure</h3>
-
-<p>
-Building scalable proteomics platforms supporting interdisciplinary research across institutes.
-</p>
-
-</div>
-
-</section>
-
-
-
-<section id="publications">
-
-<h2>Publications</h2>
-
-<p>
-
-Total citations: ~923  
-h-index: 15
-
-</p>
-
-<ul>
-
-<li>Ignatov D et al. (2025) Nature Communications</li>
-
-<li>Krause K et al. (2025) EMBO Reports</li>
-
-<li>Alagesan K & Charpentier E (2023) Springer Methods</li>
-
-<li>Kawahara R et al. (2021) Nature Methods</li>
-
-</ul>
-
-<p>
-Full publication list available in CV.
-</p>
-
-</section>
-
-
-
-<section id="talks">
-
-<h2>Invited Talks</h2>
-
-<ul>
-
-<li>AICTE Training Academy – 2026</li>
-
-<li>IZW Seminar Series – 2024</li>
-
-<li>Technische Universität Berlin Seminar – 2021</li>
-
-<li>ASBMB Glycobiology Seminar – 2021</li>
-
-</ul>
-
-</section>
-
-
-
-<section id="contact">
-
-<h2>Contact</h2>
-
-<p>Email: alagesan@mpusp.mpg.de</p>
-
-<p>ORCID: 0000-0002-7596-5558</p>
-
-<p>
-
-<a href="cv.pdf">Download CV</a>
-
-</p>
-
-</section>
-
-
-
-<footer>
-
-<p>
-
-© 2026 Dr. Kathirvel Alagesan
-
-</p>
-
-</footer>
-
-
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">KA.</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">AI & FAIR Data</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#publications">Publications</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 id="profile-name"></h1>
+                <h2 id="profile-title"></h2>
+                <p id="profile-institution" class="institution"></p>
+                <div class="hero-actions">
+                    <a id="profile-resume" href="#" class="btn primary">Download CV</a>
+                    <a id="profile-email" href="#" class="btn secondary">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <img id="profile-image" src="" alt="Profile Picture">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="section">
+            <div class="section-header">
+                <h2>About Me</h2>
+            </div>
+            <div class="section-content about-content">
+                <p id="profile-about"></p>
+                <div class="contact-details">
+                    <span id="profile-location"></span> • 
+                    <a id="profile-website" href="#" target="_blank">Website</a> • 
+                    <a id="profile-orcid" href="#" target="_blank">ORCID</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section bg-light">
+            <div class="section-header">
+                <h2>AI & FAIR Data Showcase</h2>
+                <p class="subtitle">Highlighting innovations in proteomics informatics</p>
+            </div>
+            <div class="section-content" id="projects-container">
+                <!-- Projects injected via JS -->
+            </div>
+        </section>
+
+        <section id="experience" class="section">
+            <div class="section-header">
+                <h2>Experience</h2>
+            </div>
+            <div class="section-content timeline" id="experience-container">
+                <!-- Experience injected via JS -->
+            </div>
+        </section>
+
+        <section id="education" class="section bg-light">
+            <div class="section-header">
+                <h2>Education</h2>
+            </div>
+            <div class="section-content timeline" id="education-container">
+                <!-- Education injected via JS -->
+            </div>
+        </section>
+
+        <section id="publications" class="section">
+            <div class="section-header">
+                <h2>Selected Publications & Talks</h2>
+            </div>
+            <div class="section-content split-layout">
+                <div class="list-container">
+                    <h3>Publications</h3>
+                    <ul id="publications-container" class="styled-list">
+                        <!-- Publications injected via JS -->
+                    </ul>
+                </div>
+                <div class="list-container">
+                    <h3>Invited Talks</h3>
+                    <ul id="talks-container" class="styled-list">
+                        <!-- Talks injected via JS -->
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 <span id="footer-name"></span>. Built with Vanilla JS.</p>
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="main.js"></script>
 </body>
-
 </html>
