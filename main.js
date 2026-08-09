@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("profile-resume").href = p.resumeLink;
 
     // Email buttons
-    ["profile-email","about-email","footer-email","nav-contact"].forEach(id => {
+    ["profile-email","about-email","footer-email","nav-contact","cta-email"].forEach(id => {
         const el = document.getElementById(id);
         if (el) el.href = `mailto:${p.email}`;
     });
