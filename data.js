@@ -5,7 +5,7 @@ const cvData = {
     institution: "Max Planck Unit for the Science of Pathogens, Berlin, Germany",
     tagline: "Microbial Proteomics enabled by innovations in Chemical Biology, Mass Spectrometry & Glycoproteome Informatics",
     email: "alagesan @mpusp.mpg.de",
-    website: "mpusp.mpg.de",
+    website: "www.mpusp.mpg.de",
     orcid: "0000-0002-7596-5558",
     pubmedUrl: "https://pubmed.ncbi.nlm.nih.gov/?term=Alagesan+K%5BAuthor%5D&sort=date",
     googleScholarUrl: "https://scholar.google.com/scholar?q=kathirvel+alagesan",
