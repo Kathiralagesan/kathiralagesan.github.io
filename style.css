@@ -195,6 +195,9 @@ img { max-width: 100%; display: block; }
 }
 .contact-details a:hover { opacity: 0.6; }
 
+.about-links a { transition: var(--transition); }
+.about-links a:hover { color: var(--color-bg-teal) !important; }
+
 /* ==========================================================================
    Dual Role Boxes
    ========================================================================== */
