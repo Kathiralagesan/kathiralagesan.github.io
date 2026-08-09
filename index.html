@@ -35,17 +35,8 @@
                 <p class="hero-title" id="profile-title"></p>
                 <p class="hero-institution" id="profile-institution"></p>
                 
-                <div class="hero-actions">
-                    <a id="profile-email" href="#" class="btn primary">Let's Collaborate</a>
-                </div>
-                <div class="hero-links">
-                    <a id="hero-orcid" href="#" target="_blank">ORCID</a>
-                    <span class="divider">·</span>
-                    <a id="hero-pubmed" href="#" target="_blank">PubMed</a>
-                    <span class="divider">·</span>
-                    <a id="profile-resume" href="#" target="_blank">Curriculum Vitae</a>
-                    <span class="divider">·</span>
-                    <a id="hero-website" href="#" target="_blank">MPUSP</a>
+                <div class="hero-links" style="margin-top: 1.5rem;">
+                    <a id="hero-website" href="#" target="_blank" style="font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;">WWW.MPUSP.MPG.DE</a>
                 </div>
             </div>
             <div class="hero-image-wrapper">
@@ -70,10 +61,12 @@
                 </div>
                 <div class="about-text">
                     <p id="profile-about"></p>
-                    <div class="contact-details">
-                        <a id="about-email" href="#">alagesan@mpusp.mpg.de</a>
-                        <a id="about-website" href="#" target="_blank">www.mpusp.mpg.de</a>
-                        <a id="about-orcid" href="#" target="_blank">ORCID: 0000-0002-7596-5558</a>
+                    <div class="hero-links about-links" style="margin-top: 1.5rem; justify-content: flex-start; flex-wrap: wrap;">
+                        <a id="hero-orcid" href="#" target="_blank" style="color: var(--color-bg-navy);">ORCID</a>
+                        <span class="divider" style="color: var(--color-bg-navy);">·</span>
+                        <a id="hero-pubmed" href="#" target="_blank" style="color: var(--color-bg-navy);">PubMed</a>
+                        <span class="divider" style="color: var(--color-bg-navy);">·</span>
+                        <a id="profile-resume" href="#" target="_blank" style="color: var(--color-bg-navy);">Curriculum Vitae</a>
                     </div>
                 </div>
             </div>
@@ -93,7 +86,16 @@
             </div>
         </section>
 
-
+        <!-- CTA Section -->
+        <section id="contact-cta" class="section bg-pink" style="padding-top: 0;">
+            <div class="section-content" style="text-align: center; border-top: 1px solid rgba(43,48,76,0.1); padding-top: 4rem;">
+                <h2 class="serif-title" style="margin-bottom: 1rem; color: var(--color-bg-navy);">Let's Collaborate</h2>
+                <p style="font-size: 1.2rem; color: var(--color-bg-navy); max-width: 600px; margin: 0 auto 2rem; line-height: 1.6;">
+                    For platform services, proteomics collaborations, or speaking invitations...
+                </p>
+                <a id="cta-email" href="#" class="btn primary" style="background-color: var(--color-bg-navy); color: #fff;">alagesan [at] mpusp.mpg.de</a>
+            </div>
+        </section>
 
         <!-- Platform Leadership -->
         <section id="platform" class="section bg-teal">
@@ -164,16 +166,7 @@
                 <ul id="talks-container" class="talks-list"></ul>
             </div>
         </section>
-        <!-- CTA Section -->
-        <section id="contact-cta" class="section bg-pink">
-            <div class="section-content" style="text-align: center;">
-                <h2 class="serif-title" style="margin-bottom: 1rem; color: var(--color-bg-navy);">Let's Collaborate</h2>
-                <p style="font-size: 1.2rem; color: var(--color-bg-navy); max-width: 600px; margin: 0 auto 2rem; line-height: 1.6;">
-                    Whether you are seeking advanced proteomics platform services, exploring academic cooperation, or inquiring about speaking engagements, my inbox is open.
-                </p>
-                <a id="cta-email" href="#" class="btn primary" style="background-color: var(--color-bg-navy); color: #fff;">alagesan [at] mpusp.mpg.de</a>
-            </div>
-        </section>
+
     </main>
 
     <footer>
