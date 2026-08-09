@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Dr. Kathirvel Alagesan - Head & Project Leader in Proteomics">
     <title>Dr. Kathirvel Alagesan - CV</title>
+    <!-- Elegant, Editorial Fonts: Lora for headings, Inter for body -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,10 +17,10 @@
             <div class="logo">KA.</div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
-                <li><a href="#projects">AI & FAIR Data</a></li>
+                <li><a href="#platform">Platform</a></li>
+                <li><a href="#projects">Innovations</a></li>
                 <li><a href="#experience">Experience</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#publications">Publications</a></li>
+                <li><a href="#highlights">Publications</a></li>
             </ul>
         </div>
     </nav>
@@ -31,8 +32,8 @@
                 <h2 id="profile-title"></h2>
                 <p id="profile-institution" class="institution"></p>
                 <div class="hero-actions">
-                    <a id="profile-resume" href="#" class="btn primary">Download CV</a>
-                    <a id="profile-email" href="#" class="btn secondary">Contact Me</a>
+                    <a id="profile-email" href="#" class="btn primary">Get in Touch</a>
+                    <a id="profile-resume" href="#" class="btn secondary">View Curriculum Vitae</a>
                 </div>
             </div>
             <div class="hero-image-wrapper">
@@ -43,60 +44,83 @@
 
     <main>
         <section id="about" class="section">
-            <div class="section-header">
-                <h2>About Me</h2>
-            </div>
-            <div class="section-content about-content">
-                <p id="profile-about"></p>
-                <div class="contact-details">
-                    <span id="profile-location"></span> • 
-                    <a id="profile-website" href="#" target="_blank">Website</a> • 
-                    <a id="profile-orcid" href="#" target="_blank">ORCID</a>
+            <div class="section-content split-layout about-split">
+                <div class="about-header">
+                    <h2>Biography.</h2>
+                </div>
+                <div class="about-text">
+                    <p id="profile-about"></p>
+                    <div class="contact-details">
+                        <span id="profile-location"></span> <br>
+                        <a id="profile-website" href="#" target="_blank">Website</a> <br>
+                        <a id="profile-orcid" href="#" target="_blank">ORCID</a>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="projects" class="section bg-light">
-            <div class="section-header">
-                <h2>AI & FAIR Data Showcase</h2>
-                <p class="subtitle">Highlighting innovations in proteomics informatics</p>
+        <!-- NEW: Proteomics Platform Section -->
+        <section id="platform" class="section bg-light">
+            <div class="section-content">
+                <div class="section-header-left">
+                    <h2 id="platform-title"></h2>
+                    <p class="subtitle" id="platform-description"></p>
+                </div>
+                <div class="competencies-grid" id="competencies-container">
+                    <!-- Competencies injected via JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects / Innovations Showcase -->
+        <section id="projects" class="section">
+            <div class="section-header-center">
+                <h2>Innovations & Pipelines</h2>
+                <p class="subtitle">System-wide analysis and informatics</p>
             </div>
             <div class="section-content" id="projects-container">
                 <!-- Projects injected via JS -->
             </div>
         </section>
-
-        <section id="experience" class="section">
-            <div class="section-header">
-                <h2>Experience</h2>
+        
+        <!-- Publication Highlights -->
+        <section id="highlights" class="section bg-light">
+            <div class="section-header-center">
+                <h2>Selected Work</h2>
+                <p class="subtitle">Key publications and research highlights</p>
             </div>
-            <div class="section-content timeline" id="experience-container">
-                <!-- Experience injected via JS -->
+            <div class="section-content highlights-grid" id="highlights-container">
+                <!-- Highlights injected via JS -->
             </div>
         </section>
 
-        <section id="education" class="section bg-light">
-            <div class="section-header">
-                <h2>Education</h2>
-            </div>
-            <div class="section-content timeline" id="education-container">
-                <!-- Education injected via JS -->
+        <section id="experience" class="section">
+            <div class="section-content split-layout">
+                <div class="timeline-column">
+                    <h2 class="column-title">Experience</h2>
+                    <div class="timeline" id="experience-container">
+                        <!-- Experience injected via JS -->
+                    </div>
+                </div>
+                <div class="timeline-column">
+                    <h2 class="column-title">Education</h2>
+                    <div class="timeline" id="education-container">
+                        <!-- Education injected via JS -->
+                    </div>
+                </div>
             </div>
         </section>
 
         <section id="publications" class="section">
-            <div class="section-header">
-                <h2>Selected Publications & Talks</h2>
-            </div>
             <div class="section-content split-layout">
                 <div class="list-container">
-                    <h3>Publications</h3>
+                    <h2 class="column-title">Full Bibliography</h2>
                     <ul id="publications-container" class="styled-list">
                         <!-- Publications injected via JS -->
                     </ul>
                 </div>
                 <div class="list-container">
-                    <h3>Invited Talks</h3>
+                    <h2 class="column-title">Invited Talks</h2>
                     <ul id="talks-container" class="styled-list">
                         <!-- Talks injected via JS -->
                     </ul>
@@ -107,7 +131,7 @@
 
     <footer>
         <div class="footer-content">
-            <p>&copy; 2026 <span id="footer-name"></span>. Built with Vanilla JS.</p>
+            <p>&copy; 2026 <span id="footer-name"></span>.</p>
         </div>
     </footer>
 

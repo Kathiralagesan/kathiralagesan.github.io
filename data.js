@@ -1,6 +1,6 @@
 const cvData = {
   profile: {
-    name: "Dr. Kathirvel Alagesan",
+    name: "Kathirvel Alagesan, Dr.rer.nat",
     title: "Head & Project Leader in Proteomics",
     institution: "Max Planck Unit for the Science of Pathogens",
     location: "Berlin, Germany",
@@ -11,19 +11,70 @@ const cvData = {
     profileImage: "profile.jpg",
     resumeLink: "cv.pdf"
   },
+
+  platform: {
+    title: "Proteomics Research Platform (PROT)",
+    description: "The platform focuses on microbial proteomics, utilizing state-of-the-art mass spectrometry and chemical tools to monitor protein dynamics in microbes exposed to nutrient deprivation and host interactions. We investigate dynamic changes in protein levels, localization, interaction partners, and post-translational modifications.",
+    competencies: [
+      {
+        title: "Advanced Sample Preparation",
+        description: "Implementing next-generation Single-Pot Solid-Phase-enhanced Sample Preparation (SP3) and automated robotic liquid-handling systems for robust, high-throughput proteomics."
+      },
+      {
+        title: "Mass Spectrometry",
+        description: "Operating state-of-the-art hybrid mass spectrometers (Orbitrap Exploris™ 480 and Fusion™ Lumos Tribrid) equipped with FAIMS PRO for expanded proteome coverage and single-site PTM identification."
+      },
+      {
+        title: "Proteome Informatics",
+        description: "Offering comprehensive statistical and informatics analyses, from quality control and function annotation to extended pathways and biological significance explanation."
+      }
+    ]
+  },
   
   projects: [
     {
-      title: "FAIR-Compliant Proteomics Informatics Frameworks",
-      description: "Developed integrated, modular informatics systems to support end-to-end proteomics workflows. This platform handles everything from raw LC-MS data processing to structured reporting and biological interpretation, ensuring full reproducibility, transparency, and seamless knowledge transfer across collaborative research projects.",
-      image: "", // Add your image path here, e.g. "assets/project-fair.jpg"
-      tags: ["Data Pipelines", "Informatics", "FAIR Data"]
+      title: "SILAMBU Modular Pipeline",
+      description: "An ecosystem of integrated, modular informatics systems designed to support end-to-end proteomics workflows. This comprehensive suite ensures full reproducibility, transparency, and seamless knowledge transfer across collaborative research projects.",
+      image: "", // Add your ecosystem image path here
+      tags: ["Data Pipelines", "Informatics", "FAIR Data", "Multi-omics"],
+      modules: [
+        {
+          name: "VizGlyProt",
+          desc: "Facilitates the exploration and visualization of multi-run glycoproteomics and fractionated proteomics data, automating N- and O-glycosylation pathway mapping."
+        },
+        {
+          name: "Magnum Peptide Investigator",
+          desc: "An independent tool for the visualization of peptide sequence coverage across various samples, providing interactive heatmaps of individual peptide intensities."
+        },
+        {
+          name: "KArupar",
+          desc: "A specialized module within the SILAMBU ecosystem for deep, structured biological interpretation and proteomics data integration."
+        }
+      ]
     },
     {
-      title: "Advanced Glycoproteomics Workflows",
-      description: "Established a robust Glycoproteomics research theme to investigate host-pathogen interactions. Built specialized enrichment strategies for low-abundance proteins and post-translationally modified peptides (N- and O-glycopeptides, phosphopeptides) alongside optimized MS acquisition strategies for complex samples.",
-      image: "", // Add your image path here, e.g. "assets/project-glyco.jpg"
-      tags: ["Glycoproteomics", "Mass Spectrometry", "Method Development"]
+      title: "Glycoconjugate Vaccine Development",
+      description: "A landmark collaboration developing a recombinant production platform for Group A Streptococcus glycoconjugate vaccines. Using FAIMS-assisted nanoLC-MS/MS workflows, we provided site-specific identification of glycopeptides and analyzed glycan heterogeneity.",
+      image: "", // Add your structural/vaccine image path here
+      tags: ["Glycoproteomics", "Vaccines", "Host-Pathogen"],
+      modules: []
+    }
+  ],
+
+  publicationHighlights: [
+    {
+      title: "Recombinant production platform for Group A Streptococcus glycoconjugate vaccines",
+      journal: "npj Vaccines (2025)",
+      significance: "Demonstrated how proteomics directly supports vaccine development by confirming accurate epitope presentation and glycan composition (up to 41 rhamnose residues).",
+      image: "", // Add graphical abstract image path here
+      link: "https://doi.org/10.1038/s41541-025-01068-2"
+    },
+    {
+      title: "Streptococcus pyogenes EVs induce the alternative inflammasome via caspase-4/-5 in human monocytes",
+      journal: "EMBO Rep (2025)",
+      significance: "Detailed investigation into host-pathogen interactions and immune-mediated damage driven by microbial extracellular vesicles.",
+      image: "", // Add graphical abstract image path here
+      link: "https://doi.org/10.1038/s44319-025-00558-7"
     }
   ],
 
@@ -65,7 +116,7 @@ const cvData = {
       degree: "Doctor of Natural Sciences (Dr.rer.nat)",
       institution: "Max Planck Institute of Colloids and Interfaces & Freie Universität Berlin",
       duration: "2012 – 2016",
-      description: "Thesis: 'The Mass Spectrometry Toolkit for Glycoprotein Characterisation: Development of Novel Analytical Methods and Technologies for Glycomics and Glycoproteomics'. Won prestigious Beilstein Ph.D. fellowship and Journal of Mass Spectrometry (JMS) award."
+      description: "Thesis: 'The Mass Spectrometry Toolkit for Glycoprotein Characterisation: Development of Novel Analytical Methods and Technologies for Glycomics and Glycoproteomics'."
     },
     {
       degree: "Master of Science (M.Sc.) in Biochemistry",
@@ -85,10 +136,6 @@ const cvData = {
     {
       citation: "Yu Y, Alagesan K, Frahm D, Charpentier E, Iatsenko I (2026) 'Microbiota-induced fatty acid synthesis facilitates intestinal infection and immune-mediated damage in Drosophila' bioRxiv",
       link: "https://doi.org/10.64898/2026.04.14.718535"
-    },
-    {
-      citation: "Krause K, Franch Arroyo S, Ugolini M, Kueck T, Sullivan TJ, Gálvez EJC, Muenzner M, Goosmann C, Brinkmann V, Frese CK, Alagesan K, Vierbuchen T, Heine H, Resch U, Sander LE and Charpentier E (2025) 'Streptococcus pyogenes EVs induce the alternative inflammasome via caspase-4/-5 in human monocytes' EMBO Rep",
-      link: "https://doi.org/10.1038/s44319-025-00558-7"
     },
     {
       citation: "Ignatov D, Shanmuganathan V, Ahmed-Begrich R, Alagesan K, Hanke K, Wang C, Krause K, Cornejo FA, Funke K, Erhardt M, Frese CK, and Charpentier E (2025) 'RNA-binding protein YebC enhances translation of proline-rich amino acid stretches in bacteria'. Nat Commun",
@@ -112,7 +159,6 @@ const cvData = {
   ]
 };
 
-// Export for node environments or attach to window for browser
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = cvData;
 } else {
