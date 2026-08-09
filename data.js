@@ -9,7 +9,7 @@ const cvData = {
     orcid: "0000-0002-7596-5558",
     pubmedUrl: "https://pubmed.ncbi.nlm.nih.gov/?term=Alagesan+K%5BAuthor%5D&sort=date",
     googleScholarUrl: "https://scholar.google.com/scholar?q=kathirvel+alagesan",
-    about: "I lead the Proteomics Research Platform (PROT) at the Max Planck Unit for the Science of Pathogens. My work balances two core missions: directing state-of-the-art mass spectrometry infrastructure that empowers institute-wide research, and driving an independent scientific vision focused on systems glycobiology. Through innovations in analytical methodologies and informatics, I explore the dynamic interplay between host and pathogen from a glyco-centric perspective.",
+    about: "I lead the Proteomics Platform at the Max Planck Unit for the Science of Pathogens. My work balances two core missions: directing state-of-the-art mass spectrometry infrastructure that empowers institute-wide research, and driving an independent scientific research focused on systems glycobiology. Through innovations in analytical methodologies and informatics, I explore the dynamic interplay between host and pathogen from a glyco-centric perspective.",
     profileImage: "profile.jpg",
     resumeLink: "Kathirvel_Alagesan_CV_2026_May.docx"
   },
