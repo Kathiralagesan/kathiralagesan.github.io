@@ -1,6 +1,6 @@
 const cvData = {
   profile: {
-    name: "Kathirvel Alagesan, Dr.rer.nat",
+    name: "Dr. Kathirvel Alagesan",
     title: "Head & Project Leader in Proteomics",
     institution: "Max Planck Unit for the Science of Pathogens",
     location: "Berlin, Germany",
@@ -13,7 +13,7 @@ const cvData = {
   },
 
   platform: {
-    title: "Proteomics Research Platform (PROT)",
+    title: "Proteomics Platform",
     description: "The platform focuses on microbial proteomics, utilizing state-of-the-art mass spectrometry and chemical tools to monitor protein dynamics in microbes exposed to nutrient deprivation and host interactions. We investigate dynamic changes in protein levels, localization, interaction partners, and post-translational modifications.",
     competencies: [
       {
