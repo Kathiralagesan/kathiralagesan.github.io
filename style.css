@@ -267,9 +267,11 @@ img { max-width: 100%; display: block; }
 
 .project-tags { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 1.5rem; }
 .tag {
-    font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;
-    color: var(--color-text-main);
-    border: 2px solid var(--color-text-main); padding: 0.3rem 0.8rem;
+    font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em;
+    color: var(--color-bg-teal);
+    background: transparent;
+    border: none;
+    padding: 0;
 }
 
 /* ==========================================================================
