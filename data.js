@@ -9,7 +9,7 @@ const cvData = {
     orcid: "0000-0002-7596-5558",
     pubmedUrl: "https://pubmed.ncbi.nlm.nih.gov/?term=Alagesan+K%5BAuthor%5D&sort=date",
     googleScholarUrl: "https://scholar.google.com/scholar?q=kathirvel+alagesan",
-    about: "I lead the Proteomics Research Platform (PROT) at the Max Planck Unit for the Science of Pathogens. My work balances two core missions: directing state-of-the-art mass spectrometry infrastructure that empowers institute-wide research, and driving an independent scientific vision focused on systems glycobiology. Through innovations in analytical methodologies and informatics, I explore the dynamic interplay between host and pathogen from a glyco-centric perspective.",
+    about: "I lead the Proteomics Research Platform at the Max Planck Unit for the Science of Pathogens. My work balances two core missions: directing state-of-the-art mass spectrometry infrastructure that empowers institute-wide research, and driving an independent scientific vision focused on systems glycobiology. Through innovations in analytical methodologies and informatics, I explore the dynamic interplay between host and pathogen from a glyco-centric perspective.",
     profileImage: "profile.jpg",
     resumeLink: "Kathirvel_Alagesan_CV_2026_May.docx"
   },
@@ -35,7 +35,7 @@ const cvData = {
   platform: [
     {
       title: "Proteomics Platform Leadership",
-      description: "As Head of PROT, I manage cutting-edge mass spectrometry operations (Orbitrap Exploris 480 & Fusion Lumos with FAIMS PRO) to support almost all research topics across three MPUSP laboratories. Since 2019, the platform has enabled over 17 external collaborations, driving high-impact publications through bespoke proteomic workflows, automated liquid handling (Agilent Bravo), and rigorous FAIR-compliant data dissemination.",
+      description: "As Project leader in Proteomics, I manage cutting-edge mass spectrometry operations (Orbitrap Exploris 480 & Fusion Lumos with FAIMS PRO) to support almost all research topics across three MPUSP laboratories. Since 2021, the platform has enabled over 25 external collaborations, driving high-impact publications through bespoke proteomic workflows, automated liquid handling (Agilent Bravo), and rigorous FAIR-compliant data dissemination.",
       image: "",
       tags: ["Infrastructure Management", "Orbitrap MS", "High-Throughput Workflows", "Collaborative Science"],
       link: "platform-details.html"
@@ -95,11 +95,11 @@ const cvData = {
 
   experience: [
     {
-      role: "Project Leader & Head",
+      role: "Project Leader",
       organization: "Proteomics Research Platform, MPUSP, Berlin",
       duration: "July 2022 – Present",
       description: [
-        "Lead and direct proteomics operations and research for >30 scientists across 3 labs and 17 external collaborations.",
+        "Lead the Proteomics Research Platform, providing end-to-end LC-MS-based analytical services and scientific support to >30 researchers across MPUSP and collaborating institutes (200 registered project submissions, 25 external collaborations since 2021). ",
         "Develop high-throughput proteomic workflows: SP3, SILAC, TMT, DIA-MS, glycoproteomics, and targeted assays.",
         "Manage two state-of-the-art Orbitrap MS systems (Exploris 480 & Lumos Fusion) with FAIMS PRO.",
         "Develop the SILAMBU modular bioinformatics ecosystem for FAIR-compliant data management and visualization."
@@ -112,16 +112,17 @@ const cvData = {
       description: [
         "Established the 'Glycoproteomics' research theme within MPUSP.",
         "Developed systems-wide glycoproteome workflows for host-pathogen interaction studies.",
-        "Co-authored the GlycoAtlas initiative: site-specific N- and O-glycosylation of 10 human tissue lysates."
+        "Took charge of the Proteomics Research Platform in May 2021."
       ]
     },
     {
       role: "Post-Doctoral Research Fellow",
-      organization: "Institute for Glycomics, Griffith University, Australia",
+      organization: "Institute for Biomedicine and Glycomics (formerly Institute for Glycomics), Griffith University, Australia",
       duration: "Mar 2017 – Aug 2020",
       description: [
-        "Established 'Glycomics & Glycoproteomics in Cancer and Evolution' research group.",
-        "Developed chemo-enzymatic workflow for diversification of N-glycopeptides.",
+        "Actively involved in planning and establishment of an advanced mass spectrometry facility, including operating, troubleshooting, and maintaining the Ultimate 3000 nLC and Thermo Orbitrap Fusion, Bruker rapifleX MALDI-TOF mass spectrometers.",
+        "Established 'Glycomics & Glycoproteomics in Cancer and Evolution' research group together with Prof. Daniel Kolarich.",
+        "Developed MS methods and analytical workflows for glycopeptide characterization, including a chemo-enzymatic workflow for diversification of N-glycopeptides.",
         "Built automated glycan analysis tools for clinical samples."
       ]
     }
@@ -130,15 +131,15 @@ const cvData = {
   education: [
     {
       degree: "Doctor of Natural Sciences (Dr.rer.nat)",
-      institution: "MPI Colloids & Interfaces / Freie Universität Berlin",
+      institution: "Max Planck Institute of Colloids and Interfaces, Potsdam, Germany / Freie Universität Berlin",
       duration: "2012 – 2016",
-      description: "Thesis: 'The Mass Spectrometry Toolkit for Glycoprotein Characterisation: Novel Analytical Methods for Glycomics and Glycoproteomics.'"
+      description: "Thesis: 'The Mass Spectrometry Toolkit for Glycoprotein Characterisation: Development of Novel Analytical Methods and Technologies for Glycomics and Glycoproteomics.'"
     },
     {
       degree: "M.Sc. Biochemistry — Protein Science & Biotechnology",
       institution: "University of Oulu, Finland",
       duration: "2010 – 2012",
-      description: "Novel methods for monosaccharide identification by mass spectrometry."
+      description: "Novel methods for monosaccharide identification and quantitation based on Liquid Chromatography Electrospray Ionisation (LC-ESI) ion trap mass spectrometry."
     },
     {
       degree: "B.Tech Biotechnology",
