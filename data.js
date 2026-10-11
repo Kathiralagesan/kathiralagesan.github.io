@@ -139,13 +139,13 @@ const cvData = {
       degree: "M.Sc. Biochemistry — Protein Science & Biotechnology",
       institution: "University of Oulu, Finland",
       duration: "2010 – 2012",
-      description: "Novel methods for monosaccharide identification and quantitation based on Liquid Chromatography Electrospray Ionisation (LC-ESI) ion trap mass spectrometry."
+      description: "Thesis: Novel methods for monosaccharide identification and quantitation based on Liquid Chromatography Electrospray Ionisation (LC-ESI) ion trap mass spectrometry."
     },
     {
       degree: "B.Tech Biotechnology",
       institution: "Kumaraguru College of Technology, India",
       duration: "2005 – 2009",
-      description: "Isolation and identification of α-glucosidase inhibitors from medicinal plants."
+      description: "Thesis: Isolation and identification of α-glucosidase inhibitors from medicinal plants."
     }
   ],
 
