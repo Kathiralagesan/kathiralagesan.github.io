@@ -47,7 +47,7 @@ const cvData = {
       id: "systems-glycobiology",
       title: "Systems Glycobiology & Host-Pathogen Interactions",
       description: "My core research investigates how protein glycosylation influences microbial pathogenesis and host immunity. By mapping complex human glycoproteomes—such as the GlycoAtlas initiative and blood group-specific plasma profiling—we aim to uncover how pathogens like S. pyogenes exploit or evade host glycan signatures during infection. This systems-level approach bridges fundamental glycobiology with translational infection dynamics.",
-      image: "",
+      image: "images/Glyco.jpg",
       tags: ["Systems Glycobiology", "Infection Dynamics", "Human GlycoAtlas", "Host-Microbe"],
       link: "research-glycobiology.html"
     },
@@ -55,7 +55,7 @@ const cvData = {
       id: "next-gen-proteomics",
       title: "Next-Generation Proteomic Technologies",
       description: "To tackle the immense micro- and macro-heterogeneity of glycoconjugates, we develop robust, high-throughput analytical methodologies. We are breaking traditional analytical norms to improve glycopeptide coverage and resolve complex isomeric glycan structures in clinical and biological samples.",
-      image: "",
+      image: "images/Glyco_illu.jpg",
       tags: ["Method Development", "Protease Multiplexing", "Isomeric Resolution", "Analytical Chemistry"],
       link: "research-technologies.html"
     },
@@ -63,7 +63,7 @@ const cvData = {
       id: "proteome-informatics",
       title: "Advanced Proteome Informatics",
       description: "(Glyco)Proteomics is a data-rich field, but extracting biological meaning requires sophisticated tools. We are building the SILAMBU modular ecosystem—including VizGlyProt and Magnum—to seamlessly translate raw mass spectrometry data into structured biological knowledge. This framework emphasizes interactive data visualization, reproducible pipelines, and FAIR principles, culminating in the Proteomics Knowledgebase.",
-      image: "",
+      image: "images/Dynamics.jpg",
       tags: ["FAIR Data", "Bioinformatics", "Data Visualization", "Open Science"],
       link: "research-informatics.html"
     }
