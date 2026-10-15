@@ -47,7 +47,7 @@ const cvData = {
       id: "systems-glycobiology",
       title: "Systems Glycobiology & Host-Pathogen Interactions",
       description: "My core research investigates how protein glycosylation influences microbial pathogenesis and host immunity. By mapping complex human glycoproteomes—such as the GlycoAtlas initiative and blood group-specific plasma profiling—we aim to uncover how pathogens like S. pyogenes exploit or evade host glycan signatures during infection. This systems-level approach bridges fundamental glycobiology with translational infection dynamics.",
-      image: "images/Glyco.jpg",
+      image: "images/Glyco_bacteria.jpg",
       tags: ["Systems Glycobiology", "Infection Dynamics", "Human GlycoAtlas", "Host-Microbe"],
       link: "research-glycobiology.html"
     },
@@ -63,7 +63,7 @@ const cvData = {
       id: "proteome-informatics",
       title: "Advanced Proteome Informatics",
       description: "(Glyco)Proteomics is a data-rich field, but extracting biological meaning requires sophisticated tools. We are building the SILAMBU modular ecosystem—including VizGlyProt and Magnum—to seamlessly translate raw mass spectrometry data into structured biological knowledge. This framework emphasizes interactive data visualization, reproducible pipelines, and FAIR principles, culminating in the Proteomics Knowledgebase.",
-      image: "images/Dynamics.jpg",
+      image: "images/Dynamics.png",
       tags: ["FAIR Data", "Bioinformatics", "Data Visualization", "Open Science"],
       link: "research-informatics.html"
     }
