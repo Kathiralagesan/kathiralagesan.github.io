@@ -35,7 +35,7 @@ const cvData = {
   platform: [
     {
       title: "Proteomics Platform Leadership",
-      description: "As Project leader in Proteomics, I manage cutting-edge mass spectrometry operations (Orbitrap Exploris 480 & Fusion Lumos with FAIMS PRO) to support almost all research topics across three MPUSP laboratories. Since 2021, the platform has enabled over 25 external collaborations, driving high-impact publications through bespoke proteomic workflows, automated liquid handling (Agilent Bravo), and rigorous FAIR-compliant data dissemination.",
+      description: "As Project leader in Proteomics, I manage cutting-edge mass spectrometry operations (Orbitrap Exploris 480 & Fusion Lumos with FAIMS PRO) to support almost all research topics across three MPUSP laboratories. Since 2021, the platform has enabled over 25 external collaborations, driving high-impact publications through fit-for-purpose highthroughput proteomic workflows, and rigorous FAIR-compliant data dissemination.",
       image: "",
       tags: ["Infrastructure Management", "Orbitrap MS", "High-Throughput Workflows", "Collaborative Science"],
       link: "platform-details.html"
