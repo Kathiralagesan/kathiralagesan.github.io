@@ -3,27 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Proteomics Research Platform - Advanced Mass Spectrometry capabilities led by Dr. Kathirvel Alagesan.">
+    <meta name="description" content="Proteomics Research Platform — Microbial Proteomics enabled by innovations in Chemical Biology, Mass Spectrometry & Glycoproteome Informatics. Led by Dr. Kathirvel Alagesan at MPUSP, Berlin.">
     <meta name="google-site-verification" content="M2EP-Uqpj0NQas1eNHSiCozvgyFSXLWA8i90FR-kQQc" />
-    <title>Proteomics Platform Leadership — Dr. Kathirvel Alagesan</title>
+    <title>Proteomics Platform — Dr. Kathirvel Alagesan | MPUSP</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <style>
-        .page-header { padding: 160px 3rem 60px; text-align: center; }
-        .page-content { max-width: 900px; margin: 0 auto; padding: 4rem 3rem 100px; }
-        .page-content h2 { margin-top: 3.5rem; margin-bottom: 1.5rem; font-size: 2.2rem; border-bottom: 2px solid var(--color-text-main); padding-bottom: 0.5rem; }
-        .page-content h3 { margin-top: 2.5rem; margin-bottom: 1rem; font-size: 1.5rem; }
-        .page-content p { font-size: 1.15rem; margin-bottom: 1.5rem; line-height: 1.8; }
-        .page-content ul { font-size: 1.15rem; margin-bottom: 2rem; list-style-type: none; padding-left: 0; }
-        .page-content li { margin-bottom: 1rem; padding-left: 1.5rem; position: relative; }
-        .page-content li::before { content: '■'; position: absolute; left: 0; color: var(--color-bg-navy); font-size: 0.8rem; top: 0.4rem; }
+        .page-header { padding: 160px 3rem 80px; text-align: center; }
+        .page-header h1 { font-size: clamp(3rem, 5vw, 5rem); }
+        .tagline-pill {
+            display: inline-block;
+            border: 1.5px solid rgba(255,255,255,0.4);
+            color: rgba(255,255,255,0.9);
+            padding: 0.4rem 1.2rem;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
         .back-link { display: inline-block; margin-bottom: 2rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; }
         .hardware-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem; }
-        .hardware-card { background: #fff; border: 3px solid var(--color-text-main); padding: 2rem; }
-        .hardware-card h4 { font-family: var(--font-heading); text-transform: uppercase; font-size: 1.3rem; margin-bottom: 0.5rem; }
-        @media (max-width: 768px) { .hardware-grid { grid-template-columns: 1fr; } }
+        .hardware-card { background: rgba(255,255,255,0.05); border: 2px solid rgba(255,255,255,0.2); padding: 2rem; }
+        .hardware-card h4 { font-family: var(--font-heading); text-transform: uppercase; font-size: 1.2rem; margin-bottom: 1rem; color: var(--color-bg-pink); }
+        .hardware-card p, .hardware-card li { font-size: 1rem; color: rgba(255,255,255,0.85); line-height: 1.7; }
+        .hardware-card ul { padding-left: 1.2rem; margin-bottom: 1rem; }
+        .service-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem; }
+        .service-card { background: #fff; border: 2px solid var(--color-bg-navy); padding: 2rem; }
+        .service-card h4 { font-family: var(--font-heading); text-transform: uppercase; font-size: 1.1rem; color: var(--color-bg-navy); margin-bottom: 0.8rem; }
+        .service-card p { font-size: 1rem; line-height: 1.7; color: var(--color-text-main); }
+        .eyebrow { font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.85rem; margin-bottom: 0.75rem; }
+        .future-item { border-left: 3px solid var(--color-bg-teal); padding-left: 1.5rem; margin-bottom: 2rem; }
+        .future-item h4 { font-family: var(--font-heading); font-size: 1.2rem; text-transform: uppercase; color: var(--color-bg-navy); margin-bottom: 0.5rem; }
+        .future-item p { font-size: 1.05rem; line-height: 1.7; }
+        @media (max-width: 768px) {
+            .hardware-grid, .service-grid { grid-template-columns: 1fr; }
+        }
     </style>
 </head>
 <body class="bg-peach">
@@ -38,76 +56,304 @@
         </div>
     </nav>
 
+    <!-- =====================================================================
+         HEADER — Navy
+         The sub-tagline "Microbial Proteomics enabled by..." serves as the
+         platform's identity statement. It names the 3 pillars that make the
+         platform unique and gives visitors an instant context before the WHY.
+    ====================================================================== -->
     <header class="page-header bg-navy">
-        <h1 style="font-size: clamp(3rem, 5vw, 5rem);">Proteomics Platform</h1>
-        <p class="hero-title" style="margin-top: 1rem;">Max Planck Unit for the Science of Pathogens</p>
-        <p style="font-size: 1.3rem; font-weight: 400; font-style: italic; color: rgba(255,255,255,0.9); margin-top: 2rem; max-width: 900px; margin-left: auto; margin-right: auto;">
-            The Proteomics Platform provides access to state-of-the-art proteomics infrastructure and offers expert consultancy for both internal and external users.
+        <h1>Proteomics Research Platform</h1>
+        <p class="hero-title" style="margin-top: 0.5rem;">Max Planck Unit for the Science of Pathogens · Berlin, Germany</p>
+        <div class="tagline-pill">
+            Microbial Proteomics enabled by innovations in Chemical Biology, Mass Spectrometry &amp; Glycoproteome Informatics
+        </div>
+        <p style="font-size: 1.15rem; font-weight: 300; font-style: italic; color: rgba(255,255,255,0.8); max-width: 850px; margin: 1rem auto 0; line-height: 1.7;">
+            A research platform that operates at the intersection of science and service — pursuing independent discovery whilst empowering institute-wide research through state-of-the-art analytical infrastructure.
         </p>
     </header>
 
+    <!-- =====================================================================
+         THE WHY — Teal
+         Start from purpose. This is the Golden Circle core: the belief that
+         drives everything. Drawn from the Future Outlook + Research Concept
+         sections of the platform document.
+    ====================================================================== -->
     <section class="section bg-teal">
         <div class="section-content" style="text-align: center;">
-            <p style="color: white; font-size: 1.3rem; max-width: 900px; margin: 0 auto; line-height: 1.8;">
-                At MPUSP, we use state-of-the-art mass spectrometry and chemical tools to monitor protein dynamics in microbes exposed to nutrient deprivation and unfavorable growth conditions. We are particularly interested in dynamic changes in protein levels, localization, interaction partners (RNA and protein), and post-translational modifications.
+            <p class="eyebrow" style="color: rgba(255,255,255,0.65);">The Why</p>
+            <p style="color: white; font-size: 1.5rem; font-weight: 300; max-width: 950px; margin: 0 auto; line-height: 1.7;">
+                We believe that unlocking the molecular language of host-pathogen interactions demands more than standard tools. Our purpose is to build a unique, integrative microbial proteomic map — one that decodes how bacteria respond to, exploit, and reshape the host proteome, glycoproteome, and beyond. Every workflow we develop, every dataset we curate, and every collaboration we pursue is in service of this singular goal: transforming mass spectrometry data into biological insight with the highest possible depth, reproducibility, and openness.
             </p>
         </div>
     </section>
 
+    <!-- =====================================================================
+         THE HOW — Peach
+         The methodology section. Structured as two sub-areas:
+         1. Analytical approach (experimental)
+         2. Data philosophy (informatics + FAIR)
+         Content drawn from Core Competence, Data Dissemination, QC sections.
+    ====================================================================== -->
     <section class="section bg-peach">
-        <div class="section-content" style="max-width: 900px;">
-            <h2 style="font-size: 2.2rem; color: var(--color-bg-navy); border-bottom: 2px solid var(--color-text-main); padding-bottom: 0.5rem; margin-bottom: 1.5rem;">Our Multifaceted Approach</h2>
-            <p style="font-size: 1.15rem; line-height: 1.8;">We integrate ribosomal protein profiling, transcriptomics, and proteomics to understand microbial behavior and its implications for pathogenesis, specifically exploring:</p>
-            <ul style="font-size: 1.15rem; line-height: 1.8; padding-left: 1.5rem; margin-top: 1rem; margin-bottom: 4rem;">
-                <li style="margin-bottom: 1rem; position: relative;"><span style="position: absolute; left: -1.5rem; color: var(--color-bg-navy);">■</span><strong>Host & bacterial proteome organization:</strong> Understanding how proteins are structured and arranged in both host and bacterial cells.</li>
-                <li style="margin-bottom: 1rem; position: relative;"><span style="position: absolute; left: -1.5rem; color: var(--color-bg-navy);">■</span><strong>Bacterial Protein-RNA interaction:</strong> Studying the interactions between bacterial proteins and RNA molecules.</li>
-                <li style="margin-bottom: 1rem; position: relative;"><span style="position: absolute; left: -1.5rem; color: var(--color-bg-navy);">■</span><strong>Infection-driven protein dynamics:</strong> Analyzing how protein expression and modification change during infection, including the complex cross-talk between different PTMs.</li>
-                <li style="margin-bottom: 1rem; position: relative;"><span style="position: absolute; left: -1.5rem; color: var(--color-bg-navy);">■</span><strong>Stress-driven bacterial protein dynamics:</strong> Examining changes in bacterial proteins in response to environmental stresses.</li>
-            </ul>
+        <div class="section-content">
+            <div class="section-header-split">
+                <div>
+                    <p class="eyebrow" style="color: var(--color-bg-teal);">The How</p>
+                    <h2 style="font-size: clamp(2.5rem, 4vw, 3.5rem);">Our Approach</h2>
+                </div>
+                <div class="section-description">
+                    <p>From the very first experimental consultation through to final data deposition in public repositories, we apply a rigorous, project-tailored framework. Our approach integrates three interconnected pillars — analytical excellence, systems thinking, and open science — that collectively define how we generate, interpret, and share proteomics knowledge.</p>
+                </div>
+            </div>
+
+            <div class="service-grid">
+                <div class="service-card">
+                    <h4>▸ Chemical Biology &amp; Sample Preparation</h4>
+                    <p>We implement the next-generation <strong>SP3 (Single-Pot Solid-Phase-enhanced)</strong> sample preparation technology, delivering unmatched sensitivity for low-abundance and low-volume samples. For larger cohorts, we deploy the <strong>Agilent Bravo</strong> robotic liquid-handling platform, enabling high-throughput, minimally variable proteomics at scale. Specialist expertise covers:</p>
+                    <ul style="margin-top: 0.75rem; font-size: 1rem; line-height: 1.7; padding-left: 1.2rem;">
+                        <li>Multi-protease digestion (trypsin, LysC, chymotrypsin, ArgC, GluC, AspN) for enhanced sequence coverage</li>
+                        <li>Stable isotope labeling (SILAC, TMT, dimethyl) for relative and absolute quantification</li>
+                        <li>HILIC-based enrichment of N- and O-glycopeptides</li>
+                        <li>TiO₂/Ti-IMAC enrichment of phosphopeptides</li>
+                        <li>Peptide-SEC for cross-linked peptide analysis</li>
+                        <li>High-pH reverse-phase pre-fractionation for deep proteome coverage</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <h4>▸ Mass Spectrometry &amp; Fragmentation</h4>
+                    <p>All LC-MS/MS workflows are executed on dual high-resolution hybrid Orbitrap platforms coupled to FAIMS PRO ion mobility sources, providing superior analyte selectivity and expanded proteome depth. Our MS expertise spans:</p>
+                    <ul style="margin-top: 0.75rem; font-size: 1rem; line-height: 1.7; padding-left: 1.2rem;">
+                        <li>Data-Dependent (DDA) and Data-Independent Acquisition (DIA) at system-wide scale</li>
+                        <li>EThcD and ETD fragmentation for intact glycopeptide characterization</li>
+                        <li>HCD, CID and beam-type activation for phosphopeptides and standard proteomics</li>
+                        <li>FAIMS-assisted nanoLC-MS/MS for improved PTM detection in complex backgrounds</li>
+                        <li>Targeted workflows (Skyline-based PRM/MRM) for consistent quantification of pre-selected targets</li>
+                        <li>Analysis of protein-protein, protein-RNA, and protein-DNA interaction networks</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <h4>▸ Proteome Informatics &amp; Visualization</h4>
+                    <p>We operate a bespoke, modular informatics ecosystem — <strong>SILAMBU</strong> — that covers end-to-end proteomics data processing and reporting. In-house tools include <strong>VizGlyProt</strong> for glycoproteomics knowledge base construction and pathway visualization, and <strong>Magnum Peptide Investigator</strong> for interactive protein sequence coverage analysis. Software deployed includes:</p>
+                    <ul style="margin-top: 0.75rem; font-size: 1rem; line-height: 1.7; padding-left: 1.2rem;">
+                        <li>MSFragger &amp; FragPipe for high-throughput database searching</li>
+                        <li>Spectronaut for DIA analysis with predicted spectral libraries</li>
+                        <li>Byonic for complex intact glycopeptide identification</li>
+                        <li>MaxQuant / Perseus for label-based quantification and statistical analysis</li>
+                        <li>R/Bioconductor custom pipelines for differential expression, GSEA, and multi-omics integration</li>
+                        <li>Interactive HTML dashboards for reproducible reporting</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <h4>▸ FAIR Data &amp; Open Science</h4>
+                    <p>Every dataset generated by PROT is handled according to the <strong>FAIR principles</strong> (Findable, Accessible, Interoperable, Reusable) and the <strong>MIPAGE</strong> (Minimum Information About a Proteomics Experiment) community standard. All LC-MS/MS raw data are deposited in the <strong>ProteomeXchange / PRIDE</strong> repository prior to manuscript submission, and data analysis pipelines are versioned and documented for full reproducibility. As an <strong>Open Science Ambassador</strong> for the Max Planck Society since 2024, Dr. Alagesan is actively committed to fostering a culture of transparency, knowledge sharing, and open infrastructure across the MPUSP community and beyond.</p>
+                </div>
+            </div>
         </div>
     </section>
 
+    <!-- =====================================================================
+         THE WHAT — Navy
+         The tangible deliverables: hardware + full service menu.
+         Expanded from the infrastructure section with richer descriptions.
+    ====================================================================== -->
     <section class="section bg-navy" style="color: white;">
         <div class="section-content">
             <div class="section-header-center">
-                <h2>Infrastructure</h2>
+                <p class="eyebrow" style="color: rgba(255,255,255,0.65);">The What</p>
+                <h2>Infrastructure &amp; Services</h2>
+                <p style="color: rgba(255,255,255,0.8); max-width: 700px; margin: 1rem auto 0; font-size: 1.1rem; line-height: 1.7;">Two state-of-the-art mass spectrometers. A full analytical pipeline from sample to insight. Available to MPUSP researchers, external collaborators, and partner institutions.</p>
             </div>
-            
-            <div class="hardware-grid">
-                <div class="hardware-card" style="background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.2);">
-                    <h4 style="color: var(--color-bg-pink);">Mass Spectrometry</h4>
-                    <p>The laboratory houses two high-resolution hybrid mass spectrometers:</p>
-                    <ul style="font-size: 1.1rem; margin-bottom: 1rem; padding-left: 1.5rem;">
-                        <li><strong>Orbitrap Exploris™ 480</strong></li>
-                        <li><strong>Orbitrap Fusion™ Lumos Tribrid</strong></li>
+
+            <div class="hardware-grid" style="margin-top: 4rem;">
+                <div class="hardware-card">
+                    <h4>Orbitrap Exploris™ 480</h4>
+                    <p>A versatile, high-resolution benchtop mass spectrometer optimized for rapid, deep quantitative proteomics workflows. Ideal for large-cohort DDA/DIA experiments requiring maximum throughput and reproducibility.</p>
+                    <ul style="margin-top: 1rem;">
+                        <li>High-resolution MS/MS at scan rates optimized for DIA</li>
+                        <li>FAIMS PRO interface for improved selectivity in complex matrices</li>
+                        <li>Coupled to Dionex UltiMate 3000 RSLC in nano configuration</li>
                     </ul>
-                    <p style="font-size: 1rem; color: rgba(255,255,255,0.8);">Both feature a FAIMS PRO source for atmospheric ion mobility separations, allowing for improved analyte selectivity and expanded proteome coverage.</p>
                 </div>
-                
-                <div class="hardware-card" style="background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.2);">
-                    <h4 style="color: var(--color-bg-pink);">Liquid Chromatography</h4>
-                    <ul style="font-size: 1.1rem; margin-bottom: 1rem; padding-left: 1.5rem;">
-                        <li><strong>Ultimate 3000 RSLC (Dionex):</strong> Operated in nano or capLC configurations.</li>
-                        <li><strong>1200 Infinity HPLC (Agilent):</strong> Used for pre-fractionation of complex protein digests.</li>
+
+                <div class="hardware-card">
+                    <h4>Orbitrap Fusion™ Lumos Tribrid</h4>
+                    <p>A top-of-the-range tribrid platform combining the Orbitrap, ion trap, and quadrupole mass analyzers with full ETD capability. The instrument of choice for challenging glycopeptide and phosphopeptide analyses requiring EThcD or multistage fragmentation.</p>
+                    <ul style="margin-top: 1rem;">
+                        <li>EThcD, ETD, HCD, and CID fragmentation modes</li>
+                        <li>FAIMS PRO source for atmospheric ion mobility</li>
+                        <li>Coupled to Dionex UltiMate 3000 RSLC in nano and capLC configuration</li>
                     </ul>
-                    <h4 style="color: var(--color-bg-pink); margin-top: 1.5rem;">Automated Sample Prep</h4>
-                    <p style="font-size: 1rem; color: rgba(255,255,255,0.8);"><strong>Agilent Bravo Automated Liquid Handling Platform</strong> for high-throughput SP3, Mag-Resyn, and PTM enrichment protocols.</p>
+                </div>
+
+                <div class="hardware-card">
+                    <h4>Chromatography Suite</h4>
+                    <p>A complete chromatography infrastructure for peptide separations at every scale — from nano-amounts to preparative fractionation.</p>
+                    <ul style="margin-top: 1rem;">
+                        <li><strong>Dionex UltiMate 3000 RSLC</strong> × 2 — nano and capLC, online desalting</li>
+                        <li><strong>Agilent 1260 Infinity II HPLC</strong> — high-pH reverse phase, SEC, ion exchange</li>
+                        <li>HILIC glycopeptide enrichment and TiO₂/Ti-IMAC phosphopeptide enrichment</li>
+                    </ul>
+                </div>
+
+                <div class="hardware-card">
+                    <h4>Automated Sample Processing</h4>
+                    <p>Scalable, reproducible sample preparation for high-throughput studies and clinical cohorts.</p>
+                    <ul style="margin-top: 1rem;">
+                        <li><strong>Agilent Bravo</strong> robotic liquid-handling platform</li>
+                        <li>SP3 and Mag-Resyn® workflows for minimal-loss protein digestion</li>
+                        <li>Standardised QC protocols with Pierce MS-compatible standards</li>
+                        <li>Fully documented SOP library for reproducibility and inter-lab transfer</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Full Service Menu -->
+            <div style="margin-top: 5rem; border-top: 1px solid rgba(255,255,255,0.15); padding-top: 4rem;">
+                <h3 style="text-align: center; color: white; font-size: 1.8rem; margin-bottom: 2.5rem;">Full Service Menu</h3>
+                <div class="hardware-grid">
+                    <div class="hardware-card">
+                        <h4>Pre-Experimental Consultation</h4>
+                        <p>Scientific advice on experimental design, including sample size calculations, appropriate controls, and protease strategy selection. We work with you before a single tube is opened to maximize the return on your experiment.</p>
+                    </div>
+                    <div class="hardware-card">
+                        <h4>Quantitative Proteomics</h4>
+                        <p>Discovery-driven and targeted quantification workflows — from label-free and dimethyl labeling to SILAC and TMT — for single proteins up to whole-cell lysates and secretome samples.</p>
+                    </div>
+                    <div class="hardware-card">
+                        <h4>Glycoproteomics</h4>
+                        <p>Site-specific N- and O-glycopeptide identification and relative quantification using HILIC enrichment, FAIMS-assisted nanoLC-MS/MS, and Byonic-based intact glycopeptide searching. Automated N/O-glycosylation pathway reconstruction via VizGlyProt.</p>
+                    </div>
+                    <div class="hardware-card">
+                        <h4>PTM Analysis</h4>
+                        <p>Phosphoproteomics (pSer, pThr, pTyr), arginine phosphorylation, and broad-spectrum PTM identification at the site-specific level. Multi-PTM and PTM crosstalk analysis for complex regulatory questions.</p>
+                    </div>
+                    <div class="hardware-card">
+                        <h4>Interactomics</h4>
+                        <p>Protein-protein, protein-RNA (RIP/CLIP-seq adjacent workflows), and protein-DNA interaction partner identification by co-IP followed by LC-MS/MS. Cross-linking MS (XL-MS) analysis pipeline (internal service).</p>
+                    </div>
+                    <div class="hardware-card">
+                        <h4>Data Analysis &amp; Reporting</h4>
+                        <p>Full bioinformatics support: peptide/protein identification, quantification, differential expression testing, pathway enrichment (GSEA), clustering, and biological interpretation. Delivered as interactive HTML notebooks and structured reports.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- =====================================================================
+         RESEARCH IMPACT — Pink
+         Landmark outcomes that demonstrate the platform's scientific impact.
+         Drawn from the Collaborations and Projects sections of the platform doc.
+         This section is crucial — it proves the WHY is working.
+    ====================================================================== -->
     <section class="section bg-pink">
+        <div class="section-content">
+            <div class="section-header-center">
+                <p class="eyebrow" style="color: var(--color-bg-navy); opacity: 0.7;">Impact in Action</p>
+                <h2 style="color: var(--color-bg-navy);">Selected Contributions</h2>
+                <p style="color: var(--color-bg-navy); max-width: 700px; margin: 1rem auto 0; font-size: 1.1rem; line-height: 1.7; opacity: 0.85;">Since its establishment in 2019, PROT has contributed to nearly every research project across the three MPUSP laboratories, demonstrating that deep, service-oriented proteomics and independent research can genuinely coexist.</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 4rem;">
+                <div style="background: white; padding: 2rem; border: 2px solid var(--color-bg-navy);">
+                    <p class="eyebrow" style="color: var(--color-bg-teal);">NPJ Vaccines · 2025</p>
+                    <h4 style="font-family: var(--font-heading); font-size: 1.3rem; color: var(--color-bg-navy); text-transform: uppercase; margin-bottom: 1rem;">Glycoconjugate Vaccine for <em>S. pyogenes</em></h4>
+                    <p style="font-size: 1rem; line-height: 1.7; color: var(--color-text-main);">In collaboration with Helge C. Dorfmueller (University of Dundee), PROT provided the glycoproteomics backbone for a landmark Nature NPJ Vaccines paper developing a recombinant GAS glycoconjugate vaccine. Using FAIMS-assisted nanoLC-MS/MS and Byonic, the platform detected glycopeptides carrying up to <strong>41 rhamnose residues</strong> with full structural confirmation — a technical achievement at the outer boundary of intact glycopeptide MS. Site-specific glycosylation was confirmed for both NanA and IdeS carrier proteins, directly informing immunogenicity design.</p>
+                </div>
+
+                <div style="background: white; padding: 2rem; border: 2px solid var(--color-bg-navy);">
+                    <p class="eyebrow" style="color: var(--color-bg-teal);">Community Benchmark · Nat Methods 2021</p>
+                    <h4 style="font-family: var(--font-heading); font-size: 1.3rem; color: var(--color-bg-navy); text-transform: uppercase; margin-bottom: 1rem;">Glycoproteomics Informatics Benchmark</h4>
+                    <p style="font-size: 1rem; line-height: 1.7; color: var(--color-text-main);">As a participant in the international community evaluation of glycoproteomics search strategies (Kawahara et al., <em>Nature Methods</em> 2021), PROT contributed to establishing high-performance analytical benchmarks for serum glycopeptide analysis. The study, covering 17 different software solutions, positioned PROT's FAIMS-enhanced workflow among the highest-performing strategies for intact glycopeptide identification.</p>
+                </div>
+
+                <div style="background: white; padding: 2rem; border: 2px solid var(--color-bg-navy);">
+                    <p class="eyebrow" style="color: var(--color-bg-teal);">Ongoing · <em>S. pyogenes</em> Systems Biology</p>
+                    <h4 style="font-family: var(--font-heading); font-size: 1.3rem; color: var(--color-bg-navy); text-transform: uppercase; margin-bottom: 1rem;">Expanding the Bacterial Proteome Landscape</h4>
+                    <p style="font-size: 1rem; line-height: 1.7; color: var(--color-text-main);">Using optimized DIA with Spectronaut and a predicted spectral library, PROT has achieved identification of <strong>75% (1,300 of 1,690 ORFs)</strong> of the <em>S. pyogenes</em> M1 reference proteome across three growth phases. This work forms the foundation for the ongoing investigation of how <em>S. pyogenes</em> modifies, exploits, and decorates host glycoproteins when exposed to human ABO plasma — linking the bacterium's virulence strategy directly to glycan biology.</p>
+                </div>
+
+                <div style="background: white; padding: 2rem; border: 2px solid var(--color-bg-navy);">
+                    <p class="eyebrow" style="color: var(--color-bg-teal);">Multi-Lab Support · 2019–Present</p>
+                    <h4 style="font-family: var(--font-heading); font-size: 1.3rem; color: var(--color-bg-navy); text-transform: uppercase; margin-bottom: 1rem;">Institute-Wide Proteomics Infrastructure</h4>
+                    <p style="font-size: 1rem; line-height: 1.7; color: var(--color-text-main);">PROT has provided LC-MS-based bioanalytical services to over 30 scientists across MPUSP, the Max Planck Institute for Infection Biology (MPIIB), and the Deutsches Rheuma-Forschungszentrum (DRFZ). This includes proteomic contributions to published studies on streptococcal EVs and inflammasome activation (EMBO Rep, 2025), RNA-binding protein translation regulation (Nat Commun, 2025), and Drosophila infection dynamics (PNAS, 2025 — in press).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================================================
+         FUTURE OUTLOOK — Peach
+         Completely rewritten from the "Future Outlook" section of the platform
+         document. Structured as 5 strategic research directions, each with a
+         scientific rationale grounded in current microbiology/glycobiology.
+    ====================================================================== -->
+    <section class="section bg-peach">
+        <div class="section-content">
+            <div class="section-header-split">
+                <div>
+                    <p class="eyebrow" style="color: var(--color-bg-teal);">Looking Forward</p>
+                    <h2 style="font-size: clamp(2.5rem, 4vw, 3.5rem);">Research Horizon</h2>
+                </div>
+                <div class="section-description">
+                    <p>The overarching objective of PROT is to build the most comprehensive integrative proteomic map of microbial pathogenesis and host-microbe glycobiology yet assembled. The following strategic directions define our research programme for the coming years, combining methodological innovation with bold biological questions.</p>
+                </div>
+            </div>
+
+            <div style="margin-top: 3rem;">
+                <div class="future-item">
+                    <h4>ABO Blood Group Glycosylation &amp; Host-Pathogen Interaction</h4>
+                    <p>The ABO blood group system — one of the most biologically fundamental glycan systems in humans — defines the molecular fingerprint of the host glycocalyx. We are actively investigating how <em>S. pyogenes</em> senses, exploits, and potentially remodels ABO-type glycans on host plasma proteins to gain a competitive advantage during infection. This work integrates our GlycoAtlas baseline datasets (site-specific N- and O-glycosylation of 10 human tissue lysates and ABO blood group plasma) with infection models to directly map glycan-mediated host-pathogen crosstalk at the molecular level.</p>
+                </div>
+
+                <div class="future-item">
+                    <h4>Thermal Proteome Profiling for Novel Drug Target Discovery</h4>
+                    <p>Thermal proteome profiling (TPP) / protein thermal stability (Proteome Integral Solubility Alteration — PISA) offers a powerful, unbiased approach to identify drug-protein interactions and protein stability changes at the proteome scale. We are developing TPP workflows optimized for bacterial proteomes — which differ substantially from mammalian cells in protein abundance distributions and solubility characteristics — to identify novel anti-infective targets in <em>S. pyogenes</em> and <em>B. subtilis</em>.</p>
+                </div>
+
+                <div class="future-item">
+                    <h4>PTM Crosstalk &amp; Multi-Modification Proteomics</h4>
+                    <p>Post-translational modifications rarely operate in isolation. Phosphorylation, glycosylation, arginine phosphorylation, and ubiquitination can compete for the same residue or regulate each other through downstream signaling cascades. Using multi-protease strategies (enabling near-complete sequence coverage) combined with multi-enrichment workflows, we are systematically mapping PTM crosstalk in bacterial stress responses — particularly how arginine phosphorylation and glycosylation together govern protein stability and function in Gram-positive pathogens.</p>
+                </div>
+
+                <div class="future-item">
+                    <h4>Small Proteins &amp; Their Interactomes</h4>
+                    <p>Proteins of fewer than 100 amino acids — so-called "small proteins" or "sProteins" — are dramatically underrepresented in standard proteomics workflows, due to their poor retention on C18 columns and high charge-state complexity. We are developing dedicated analytical strategies (alternative fractionation, alternative proteases, alternative enrichment) for sProtein identification and characterization in <em>S. pyogenes</em>, with the goal of uncovering hidden regulatory networks that govern the transition between growth phases and virulence states.</p>
+                </div>
+
+                <div class="future-item">
+                    <h4>Phage Infection Dynamics &amp; Bacterial Defense Proteomics</h4>
+                    <p>Bacteriophages are increasingly recognized as key drivers of bacterial evolution, virulence, and antibiotic resistance. PROT will establish quantitative proteomics workflows to monitor the dynamic proteome remodeling that occurs in bacteria during phage infection — from initial adsorption through replication to lysis. This programme will provide insight into both phage biology and the bacterial defense mechanisms it triggers, with potential implications for phage therapy strategies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================================================
+         COLLABORATE — Navy
+         Upgraded from a simple contact banner to a proper CTA with context.
+         Email corrected to the current mpusp address.
+    ====================================================================== -->
+    <section class="section bg-navy" style="color: white;">
         <div class="section-content" style="text-align: center;">
-            <h2 style="font-size: 2rem; color: var(--color-bg-navy); margin-bottom: 1.5rem; text-transform: uppercase;">Collaborate With Us</h2>
-            <p style="font-size: 1.3rem; color: var(--color-bg-navy); max-width: 800px; margin: 0 auto 2rem;">Interested in collaborating with the proteomics research platform, using our services, or simply exploring the possibilities we offer?</p>
-            <a href="mailto:alagesan(at)mpusp.mpg.de" class="btn" style="border-color: var(--color-bg-navy); color: var(--color-bg-navy); display: inline-block; padding: 1rem 2rem; text-decoration: none; font-weight: bold; text-transform: uppercase;">Please contact Dr. Kathirvel Alagesan</a>
+            <p class="eyebrow" style="color: rgba(255,255,255,0.65);">Get Involved</p>
+            <h2 style="color: white; margin-bottom: 1.5rem;">Collaborate With Us</h2>
+            <p style="font-size: 1.2rem; color: rgba(255,255,255,0.85); max-width: 750px; margin: 0 auto 2.5rem; line-height: 1.7;">
+                Whether you are an MPUSP researcher designing your next proteomics experiment, an external academic partner, or an industry collaborator seeking cutting-edge glycoproteomics expertise — we welcome the conversation. The platform offers full start-to-end support: from experimental design to manuscript-ready data packages.
+            </p>
+            <a href="mailto:alagesan@mpusp.mpg.de" class="btn primary" style="background-color: var(--color-bg-teal); border-color: var(--color-bg-teal); color: #fff; font-size: 1rem; padding: 1rem 2.5rem;">
+                alagesan [at] mpusp.mpg.de
+            </a>
         </div>
     </section>
 
     <footer class="bg-navy">
-        <div class="footer-content" style="padding: 4rem 3rem;">
-            <p class="footer-sub">&copy; Dr. Kathirvel Alagesan</p>
+        <div class="footer-content" style="padding: 3rem 3rem 2rem; border-top: 1px solid rgba(255,255,255,0.1);">
+            <p class="footer-sub">&copy; Dr. Kathirvel Alagesan — Proteomics Research Platform, MPUSP</p>
         </div>
     </footer>
 

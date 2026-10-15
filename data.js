@@ -1,17 +1,17 @@
 const cvData = {
   profile: {
     name: "Dr. Kathirvel Alagesan",
-    title: "Project Leader in Proteomics",
+    title: "Head & Project Leader in Proteomics",
     institution: "Max Planck Unit for the Science of Pathogens, Berlin, Germany",
     tagline: "Microbial Proteomics enabled by innovations in Chemical Biology, Mass Spectrometry & Glycoproteome Informatics",
-    email: "alagesan at mpusp.mpg.de",
+    email: "alagesan@mpusp.mpg.de",
     website: "www.mpusp.mpg.de",
     orcid: "0000-0002-7596-5558",
     pubmedUrl: "https://pubmed.ncbi.nlm.nih.gov/?term=Alagesan+K%5BAuthor%5D&sort=date",
     googleScholarUrl: "https://scholar.google.com/scholar?q=kathirvel+alagesan",
-    about: "I lead the Proteomics Research Platform at the Max Planck Unit for the Science of Pathogens. My work balances two core missions: directing state-of-the-art mass spectrometry infrastructure that empowers institute-wide research, and driving an independent scientific vision focused on systems glycobiology. Through innovations in analytical methodologies and informatics, I explore the dynamic interplay between host and pathogen from a glyco-centric perspective.",
+    about: "I lead the Proteomics Research Platform (PROT) at the Max Planck Unit for the Science of Pathogens. My work balances two core missions: directing state-of-the-art mass spectrometry infrastructure that empowers institute-wide research, and driving an independent scientific vision focused on systems glycobiology. Through innovations in analytical methodologies and informatics, I explore the dynamic interplay between host and pathogen from a glyco-centric perspective.",
     profileImage: "profile.jpg",
-    resumeLink: "Kathirvel_Alagesan_CV_2026_May.docx"
+    resumeLink: "Alagesan_CV_2026.pdf"
   },
 
   pillars: [
@@ -35,7 +35,7 @@ const cvData = {
   platform: [
     {
       title: "Proteomics Platform Leadership",
-      description: "As Project leader in Proteomics, I manage cutting-edge mass spectrometry operations (Orbitrap Exploris 480 & Fusion Lumos with FAIMS PRO) to support almost all research topics across three MPUSP laboratories. Since 2021, the platform has enabled over 25 external collaborations, driving high-impact publications through fit-for-purpose highthroughput proteomic workflows, and rigorous FAIR-compliant data dissemination.",
+      description: "As Head of the Proteomics Platform, I manage state-of-the-art mass spectrometry operations (Orbitrap Exploris 480 & Fusion Lumos with FAIMS PRO) providing end-to-end analytical services to >30 researchers across MPUSP and collaborating institutes. Since 2021, the platform has delivered results for over 200 registered project submissions and 25 external collaborations, backed by automated sample processing (Agilent Bravo), our Karuppar automated LC-MS/MS QC system, and FAIR-compliant data dissemination.",
       image: "",
       tags: ["Infrastructure Management", "Orbitrap MS", "High-Throughput Workflows", "Collaborative Science"],
       link: "platform-details.html"
@@ -90,19 +90,26 @@ const cvData = {
       significance: "A landmark community effort that established gold standards for glycoproteomics informatics, cementing our workflows at the international frontier of the field.",
       image: "",
       link: "https://doi.org/10.1038/s41592-021-01309-x"
+    },
+    {
+      title: "Stress-induced ribosome degradation in Bacillus subtilis is mediated by the RNase Y-specificity complex",
+      journal: "Nature Communications · 2026",
+      significance: "Revealed molecular mechanisms of bacterial stress adaptation and ribosome degradation, highlighting the platform's high-sensitivity quantitative microbial proteomics capabilities.",
+      image: "",
+      link: "https://doi.org/10.1038/s41467-026-73310-x"
     }
   ],
 
   experience: [
     {
-      role: "Project Leader",
+      role: "Project Leader & Head",
       organization: "Proteomics Research Platform, MPUSP, Berlin",
       duration: "July 2022 – Present",
       description: [
-        "Lead the Proteomics Research Platform, providing end-to-end LC-MS-based analytical services and scientific support to >30 researchers across MPUSP and collaborating institutes (200 registered project submissions, 25 external collaborations since 2021). ",
-        "Develop high-throughput proteomic workflows: SP3, SILAC, TMT, DIA-MS, glycoproteomics, and targeted assays.",
-        "Manage two state-of-the-art Orbitrap MS systems (Exploris 480 & Lumos Fusion) with FAIMS PRO.",
-        "Develop the SILAMBU modular bioinformatics ecosystem for FAIR-compliant data management and visualization."
+        "Lead the Proteomics Research Platform, providing end-to-end LC-MS services to >30 researchers across MPUSP and collaborating institutes (200 registered project submissions, 25 external collaborations since 2021).",
+        "Direct platform operations, resource planning, and quality management across Orbitrap Exploris 480 and Fusion Lumos systems with FAIMS PRO.",
+        "Develop high-throughput workflows (SP3, automated liquid handling via Agilent Bravo) and specialized microbial and PTM proteomics assays.",
+        "Developed Karuppar, an automated LC-MS/MS quality-control and monitoring system for continuous assessment of instrument performance, alongside the SILAMBU modular ecosystem."
       ]
     },
     {
@@ -112,17 +119,16 @@ const cvData = {
       description: [
         "Established the 'Glycoproteomics' research theme within MPUSP.",
         "Developed systems-wide glycoproteome workflows for host-pathogen interaction studies.",
-        "Took charge of the Proteomics Research Platform in May 2021."
+        "Co-authored the GlycoAtlas initiative: site-specific N- and O-glycosylation of 10 human tissue lysates."
       ]
     },
     {
       role: "Post-Doctoral Research Fellow",
-      organization: "Institute for Biomedicine and Glycomics (formerly Institute for Glycomics), Griffith University, Australia",
+      organization: "Institute for Glycomics, Griffith University, Australia",
       duration: "Mar 2017 – Aug 2020",
       description: [
-        "Actively involved in planning and establishment of an advanced mass spectrometry facility, including operating, troubleshooting, and maintaining the Ultimate 3000 nLC and Thermo Orbitrap Fusion, Bruker rapifleX MALDI-TOF mass spectrometers.",
-        "Established 'Glycomics & Glycoproteomics in Cancer and Evolution' research group together with Prof. Daniel Kolarich.",
-        "Developed MS methods and analytical workflows for glycopeptide characterization, including a chemo-enzymatic workflow for diversification of N-glycopeptides.",
+        "Established 'Glycomics & Glycoproteomics in Cancer and Evolution' research group.",
+        "Developed chemo-enzymatic workflow for diversification of N-glycopeptides.",
         "Built automated glycan analysis tools for clinical samples."
       ]
     }
@@ -131,21 +137,21 @@ const cvData = {
   education: [
     {
       degree: "Doctor of Natural Sciences (Dr.rer.nat)",
-      institution: "Max Planck Institute of Colloids and Interfaces, Potsdam, Germany / Freie Universität Berlin",
+      institution: "MPI Colloids & Interfaces / Freie Universität Berlin",
       duration: "2012 – 2016",
-      description: "Thesis: 'The Mass Spectrometry Toolkit for Glycoprotein Characterisation: Development of Novel Analytical Methods and Technologies for Glycomics and Glycoproteomics.'"
+      description: "Thesis: 'The Mass Spectrometry Toolkit for Glycoprotein Characterisation: Novel Analytical Methods for Glycomics and Glycoproteomics.'"
     },
     {
       degree: "M.Sc. Biochemistry — Protein Science & Biotechnology",
       institution: "University of Oulu, Finland",
       duration: "2010 – 2012",
-      description: "Thesis: Novel methods for monosaccharide identification and quantitation based on Liquid Chromatography Electrospray Ionisation (LC-ESI) ion trap mass spectrometry."
+      description: "Novel methods for monosaccharide identification by mass spectrometry."
     },
     {
       degree: "B.Tech Biotechnology",
       institution: "Kumaraguru College of Technology, India",
       duration: "2005 – 2009",
-      description: "Thesis: Isolation and identification of α-glucosidase inhibitors from medicinal plants."
+      description: "Isolation and identification of α-glucosidase inhibitors from medicinal plants."
     }
   ],
 
@@ -195,8 +201,11 @@ const cvData = {
   ],
 
   talks: [
+    "MPUSP-UCMR Mini-Symposium, Germany (2026) — 'The molecular playbook of bacterial survival: decoding proteome and glycome remodeling during stress and infection'",
+    "25th Human Proteome Organization World Congress (HUPO 2026), Singapore — 'Rebel, Rebel: Breaking Norms with Protease Multiplexing for Glycoproteomics'",
     "20th Central & Eastern European Proteomic Conference, Zagreb (2026) — 'Rebel, Rebel: Breaking Norms with Protease Multiplexing for Glycoproteomics'",
     "AICTE Training & Learning Academy (2026) — 'From Amino to Glyco: The sweet side of proteomics'",
+    "Gordon Research Conference (GRC) – Glycobiology (2025) — 'Rebel, Rebel: Breaking the norms of protease multiplexing'",
     "MPUSP-HU Retreat, Schwerin (2025) — 'From Amino to Glyco: The Evolution of the Proteomics Research Platform'",
     "IZW Seminar Series, Berlin (2024) — 'Sugar, Spice & Spectral Insights: (Glyco)Proteomics Unwrapped'",
     "Technische Universität Berlin (2021) — 'The sweet side of proteomics' (invited by Prof. Juri Rappsilber)",

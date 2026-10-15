@@ -266,7 +266,12 @@ img { max-width: 100%; display: block; }
 
 .project-info { flex: 1; padding: 4rem; display: flex; flex-direction: column; justify-content: center; color: var(--color-text-main); }
 .serif-title { font-size: clamp(2rem, 3vw, 2.5rem); margin-bottom: 1.5rem; line-height: 1.2; text-transform: uppercase; font-family: var(--font-heading); }
-.project-info p { color: rgba(43, 48, 76, 0.8); font-size: 1.1rem; margin-bottom: 1rem; line-height: 1.7; }
+.project-card h3,
+.project-card .serif-title,
+.project-info h3,
+.project-info .serif-title { color: var(--color-text-main) !important; }
+.project-card p,
+.project-info p { color: rgba(43, 48, 76, 0.85) !important; font-size: 1.1rem; margin-bottom: 1rem; line-height: 1.7; }
 
 .project-tags { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 1.5rem; }
 .tag {
