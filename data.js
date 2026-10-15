@@ -36,7 +36,7 @@ const cvData = {
     {
       title: "Proteomics Platform Leadership",
       description: "I manage state-of-the-art mass spectrometry operations providing end-to-end analytical services to >30 researchers across MPUSP and collaborating institutes. Since 2021, the platform has delivered results for over 200 registered project submissions and 25 external collaborations, backed by automated sample processing (Agilent Bravo), our Karuppar automated LC-MS/MS QC system, and FAIR-compliant data dissemination.",
-      image: "",
+      image: "images/exploris480.jpeg",
       tags: ["Infrastructure Management", "Orbitrap MS", "High-Throughput Workflows", "Collaborative Science"],
       link: "platform-details.html"
     }
