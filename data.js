@@ -1,7 +1,7 @@
 const cvData = {
   profile: {
     name: "Dr. Kathirvel Alagesan",
-    title: "Head & Project Leader in Proteomics",
+    title: "Project Leader in Proteomics",
     institution: "Max Planck Unit for the Science of Pathogens, Berlin, Germany",
     tagline: "Microbial Proteomics enabled by innovations in Chemical Biology, Mass Spectrometry & Glycoproteome Informatics",
     email: "alagesan@mpusp.mpg.de",
@@ -35,7 +35,7 @@ const cvData = {
   platform: [
     {
       title: "Proteomics Platform Leadership",
-      description: "As Head of the Proteomics Platform, I manage state-of-the-art mass spectrometry operations (Orbitrap Exploris 480 & Fusion Lumos with FAIMS PRO) providing end-to-end analytical services to >30 researchers across MPUSP and collaborating institutes. Since 2021, the platform has delivered results for over 200 registered project submissions and 25 external collaborations, backed by automated sample processing (Agilent Bravo), our Karuppar automated LC-MS/MS QC system, and FAIR-compliant data dissemination.",
+      description: "I manage state-of-the-art mass spectrometry operations providing end-to-end analytical services to >30 researchers across MPUSP and collaborating institutes. Since 2021, the platform has delivered results for over 200 registered project submissions and 25 external collaborations, backed by automated sample processing (Agilent Bravo), our Karuppar automated LC-MS/MS QC system, and FAIR-compliant data dissemination.",
       image: "",
       tags: ["Infrastructure Management", "Orbitrap MS", "High-Throughput Workflows", "Collaborative Science"],
       link: "platform-details.html"
@@ -46,7 +46,7 @@ const cvData = {
     {
       id: "systems-glycobiology",
       title: "Systems Glycobiology & Host-Pathogen Interactions",
-      description: "My core research investigates how protein glycosylation shapes microbial pathogenesis and host immunity. By mapping complex human glycoproteomes—such as the GlycoAtlas initiative and blood group-specific plasma profiling—we aim to uncover how pathogens like S. pyogenes exploit or evade host glycan signatures during infection. This systems-level approach bridges fundamental glycobiology with translational infection dynamics.",
+      description: "My core research investigates how protein glycosylation influences microbial pathogenesis and host immunity. By mapping complex human glycoproteomes—such as the GlycoAtlas initiative and blood group-specific plasma profiling—we aim to uncover how pathogens like S. pyogenes exploit or evade host glycan signatures during infection. This systems-level approach bridges fundamental glycobiology with translational infection dynamics.",
       image: "",
       tags: ["Systems Glycobiology", "Infection Dynamics", "Human GlycoAtlas", "Host-Microbe"],
       link: "research-glycobiology.html"
@@ -54,7 +54,7 @@ const cvData = {
     {
       id: "next-gen-proteomics",
       title: "Next-Generation Proteomic Technologies",
-      description: "To tackle the immense micro- and macro-heterogeneity of glycoconjugates, my group develops robust, high-throughput analytical methodologies. We are breaking traditional analytical norms through innovations like protease multiplexing and advanced MS fragmentation strategies (sHCD, EThcD) to dramatically expand glycopeptide coverage and resolve complex isomeric structures in clinical and biological samples.",
+      description: "To tackle the immense micro- and macro-heterogeneity of glycoconjugates, we develop robust, high-throughput analytical methodologies. We are breaking traditional analytical norms to improve glycopeptide coverage and resolve complex isomeric glycan structures in clinical and biological samples.",
       image: "",
       tags: ["Method Development", "Protease Multiplexing", "Isomeric Resolution", "Analytical Chemistry"],
       link: "research-technologies.html"
@@ -62,7 +62,7 @@ const cvData = {
     {
       id: "proteome-informatics",
       title: "Advanced Proteome Informatics",
-      description: "Proteomics is a data-rich field, but extracting biological meaning requires sophisticated tools. We are building the SILAMBU modular ecosystem—including VizGlyProt and Magnum—to seamlessly translate raw mass spectrometry data into structured biological knowledge. This framework emphasizes interactive data visualization, reproducible pipelines, and FAIR principles, culminating in the MPUSP Proteomics Knowledgebase.",
+      description: "(Glyco)Proteomics is a data-rich field, but extracting biological meaning requires sophisticated tools. We are building the SILAMBU modular ecosystem—including VizGlyProt and Magnum—to seamlessly translate raw mass spectrometry data into structured biological knowledge. This framework emphasizes interactive data visualization, reproducible pipelines, and FAIR principles, culminating in the Proteomics Knowledgebase.",
       image: "",
       tags: ["FAIR Data", "Bioinformatics", "Data Visualization", "Open Science"],
       link: "research-informatics.html"
@@ -102,7 +102,7 @@ const cvData = {
 
   experience: [
     {
-      role: "Project Leader & Head",
+      role: "Project Leader",
       organization: "Proteomics Research Platform, MPUSP, Berlin",
       duration: "July 2022 – Present",
       description: [
@@ -119,15 +119,15 @@ const cvData = {
       description: [
         "Established the 'Glycoproteomics' research theme within MPUSP.",
         "Developed systems-wide glycoproteome workflows for host-pathogen interaction studies.",
-        "Co-authored the GlycoAtlas initiative: site-specific N- and O-glycosylation of 10 human tissue lysates."
       ]
     },
     {
       role: "Post-Doctoral Research Fellow",
-      organization: "Institute for Glycomics, Griffith University, Australia",
+      organization: "Institute for Biomedicine and Glycomics (formerly Institute for Glycomics), Griffith University, Australia",
       duration: "Mar 2017 – Aug 2020",
       description: [
-        "Established 'Glycomics & Glycoproteomics in Cancer and Evolution' research group.",
+        "Established 'Glycomics & Glycoproteomics in Cancer and Evolution' research group together with Prof. Daniel Kolarich.",
+        "Actively involved in planning and establishment of an advanced mass spectrometry facility.",
         "Developed chemo-enzymatic workflow for diversification of N-glycopeptides.",
         "Built automated glycan analysis tools for clinical samples."
       ]
@@ -137,7 +137,7 @@ const cvData = {
   education: [
     {
       degree: "Doctor of Natural Sciences (Dr.rer.nat)",
-      institution: "MPI Colloids & Interfaces / Freie Universität Berlin",
+      institution: "Max Planck Institute of Colloids and Interfaces / Freie Universität Berlin",
       duration: "2012 – 2016",
       description: "Thesis: 'The Mass Spectrometry Toolkit for Glycoprotein Characterisation: Novel Analytical Methods for Glycomics and Glycoproteomics.'"
     },
@@ -145,13 +145,13 @@ const cvData = {
       degree: "M.Sc. Biochemistry — Protein Science & Biotechnology",
       institution: "University of Oulu, Finland",
       duration: "2010 – 2012",
-      description: "Novel methods for monosaccharide identification by mass spectrometry."
+      description: "Thesis: 'Novel methods for monosaccharide identification by mass spectrometry.'"
     },
     {
       degree: "B.Tech Biotechnology",
-      institution: "Kumaraguru College of Technology, India",
+      institution: "Kumaraguru College of Technology, India (Affiliated to Anna University)",
       duration: "2005 – 2009",
-      description: "Isolation and identification of α-glucosidase inhibitors from medicinal plants."
+      description: "Thesis: Isolation and identification of α-glucosidase inhibitors from medicinal plants.'"
     }
   ],
 
