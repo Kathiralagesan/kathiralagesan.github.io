@@ -63,7 +63,7 @@ const cvData = {
       id: "proteome-informatics",
       title: "Advanced Proteome Informatics",
       description: "(Glyco)Proteomics is a data-rich field, but extracting biological meaning requires sophisticated tools. We are building the SILAMBU modular ecosystem—including VizGlyProt and Magnum—to seamlessly translate raw mass spectrometry data into structured biological knowledge. This framework emphasizes interactive data visualization, reproducible pipelines, and FAIR principles, culminating in the Proteomics Knowledgebase.",
-      image: "images/Dynamics.png",
+      image: "",
       tags: ["FAIR Data", "Bioinformatics", "Data Visualization", "Open Science"],
       link: "research-informatics.html"
     }
