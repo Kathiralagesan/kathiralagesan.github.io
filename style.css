@@ -470,7 +470,15 @@ img { max-width: 100%; display: block; }
     margin-bottom: 3rem; padding-bottom: 1rem;
     border-bottom: 2px solid var(--color-text-main);
 }
-.timeline-item { margin-bottom: 3rem; padding-left: 2rem; border-left: 4px solid var(--color-text-main); }
+.timeline {
+    display: flex;
+    flex-direction: column;
+}
+.timeline-item { 
+    margin-bottom: 3rem; 
+    padding-left: 2rem; 
+    border-left: 4px solid var(--color-text-main); 
+}
 .timeline-date {
     display: block; font-size: 0.9rem; font-weight: 700; font-family: var(--font-heading);
     letter-spacing: 0.08em; margin-bottom: 0.8rem;
