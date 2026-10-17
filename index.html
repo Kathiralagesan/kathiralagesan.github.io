@@ -19,10 +19,10 @@
             <div class="logo">KA.</div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
-                <li><a href="#platform">Platform</a></li>
-                <li><a href="#research">Research</a></li>
+                <li><a href="platform-details.html">Platform</a></li>
+                <li><a href="research.html">Research</a></li>
                 <li><a href="#highlights">Publications</a></li>
-                <li><a href="#experience">CV</a></li>
+                <li><a href="cv.html">CV</a></li>
             </ul>
             <a id="nav-contact" href="#" class="nav-cta">Contact</a>
         </div>
@@ -90,13 +90,13 @@
                     <h2>Biography.</h2>
                 </div>
                 <div class="about-text">
-                    <p id="profile-about"></p>
+                    <div id="profile-about" style="font-size: 1.15rem; line-height: 1.8;"></div>
                     <div class="hero-links about-links" style="margin-top: 1.5rem; justify-content: flex-start; flex-wrap: wrap;">
                         <a id="hero-orcid" href="#" target="_blank" style="color: var(--color-bg-navy);">ORCID</a>
                         <span class="divider" style="color: var(--color-bg-navy);">·</span>
                         <a id="hero-pubmed" href="#" target="_blank" style="color: var(--color-bg-navy);">PubMed</a>
                         <span class="divider" style="color: var(--color-bg-navy);">·</span>
-                        <a id="profile-resume" href="#" target="_blank" style="color: var(--color-bg-navy);">Curriculum Vitae</a>
+                        <a href="cv.html" style="color: var(--color-bg-navy);">Curriculum Vitae</a>
                     </div>
                 </div>
             </div>
@@ -105,13 +105,13 @@
             <div class="dual-role-container">
                 <div class="role-box navy">
                     <h3>Platform Leadership</h3>
-                    <p>Directing state-of-the-art MS infrastructure and FAIR-compliant proteomics pipelines to empower institute-wide discovery.</p>
-                    <a href="#platform" class="btn pub-btn">View Capabilities</a>
+                    <p>Directing state-of-the-art MS infrastructure and FAIR-compliant proteomics pipelines enabling institute-wide research.</p>
+                    <a href="platform-details.html" class="btn pub-btn">View Capabilities</a>
                 </div>
                 <div class="role-box peach">
-                    <h3>Systems Glycoproteomics</h3>
+                    <h3>Systems &amp; Analytical Glycobiology</h3>
                     <p>Driving an independent research vision to decode host-pathogen interactions through a highly specialized glyco-centric lens.</p>
-                    <a href="#research" class="btn outline-btn">Explore Research</a>
+                    <a href="research.html" class="btn outline-btn">Explore Research</a>
                 </div>
             </div>
             <!-- CTA Section -->
@@ -120,22 +120,6 @@
                     For collaborations or speaking invitations, please contact me at <a id="cta-email" href="#" style="background-color: var(--color-bg-teal); color: #fff; padding: 0.4rem 1rem; border-radius: 4px; font-weight: 700; text-decoration: none; margin-left: 0.5rem; transition: background 0.3s; white-space: nowrap;">alagesan [at] mpusp.mpg.de</a>
                 </p>
             </div>
-        </section>
-
-        <!-- Platform Leadership -->
-        <section id="platform" class="section bg-teal">
-            <div class="section-header-center">
-                <h2>Platform Leadership</h2>
-            </div>
-            <div class="section-content" id="platform-container"></div>
-        </section>
-
-        <!-- Independent Research -->
-        <section id="research" class="section bg-peach">
-            <div class="section-header-center">
-                <h2>Independent Research</h2>
-            </div>
-            <div class="section-content" id="research-container"></div>
         </section>
 
         <!-- Publication Highlights -->
@@ -157,41 +141,17 @@
             </div>
         </section>
 
-        <!-- Leadership & Service -->
-        <section id="leadership" class="section bg-pink">
-            <div class="section-content">
-                <div class="section-header-split">
-                    <div>
-                        <h2>Leadership & Outreach</h2>
-                    </div>
-                    <p class="section-description">Peer recognition as an expert reviewer at national and international levels, alongside active commitments to open science, science communication, and community leadership.</p>
-                </div>
-                <div class="leadership-grid" id="leadership-container"></div>
-            </div>
-        </section>
-
-        <!-- Experience & Education -->
+        <!-- Research Experience -->
         <section id="experience" class="section bg-peach">
-            <div class="section-content split-layout">
-                <div class="timeline-column">
-                    <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; border-bottom: 2px solid var(--color-text-main); padding-bottom: 0.5rem; margin-bottom: 2.5rem; gap: 1rem;">
-                        <h2 class="column-title" style="border-bottom: none; margin-bottom: 0; padding-bottom: 0;">Experience</h2>
-                        <a href="Alagesan_CV_2026.pdf" target="_blank" class="btn primary" style="font-size: 0.8rem; padding: 0.45rem 1.2rem;">Download CV (PDF) ↓</a>
+            <div class="section-content" style="max-width: 900px; margin: 0 auto;">
+                <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; border-bottom: 2px solid var(--color-text-main); padding-bottom: 0.75rem; margin-bottom: 2.5rem; gap: 1rem;">
+                    <h2 class="column-title" style="border-bottom: none; margin-bottom: 0; padding-bottom: 0;">Research Experience</h2>
+                    <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+                        <a href="cv.html" class="btn outline-btn" style="font-size: 0.8rem; padding: 0.45rem 1.2rem;">Education, Service &amp; Talks →</a>
+                        <a href="Alagesan_CV_2026.pdf" target="_blank" class="btn primary" style="font-size: 0.8rem; padding: 0.45rem 1.2rem;">Download Full CV (PDF) ↓</a>
                     </div>
-                    <div class="timeline" id="experience-container"></div>
                 </div>
-                <div class="timeline-column">
-                    <h2 class="column-title">Education</h2>
-                    <div class="timeline" id="education-container"></div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Talks -->
-        <section id="talks" class="section bg-teal">
-            <div class="section-content">
-                <h2 class="column-title" style="border-bottom-color: rgba(255,255,255,0.2); color: #fff;">Invited Talks</h2>
-                <ul id="talks-container" class="talks-list"></ul>
+                <div class="timeline" id="experience-container"></div>
             </div>
         </section>
 

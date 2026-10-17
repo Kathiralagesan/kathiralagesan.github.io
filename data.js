@@ -3,34 +3,16 @@ const cvData = {
     name: "Dr. Kathirvel Alagesan",
     title: "Project Leader in Proteomics",
     institution: "Max Planck Unit for the Science of Pathogens, Berlin, Germany",
-    tagline: "Microbial Proteomics enabled by innovations in Chemical Biology, Mass Spectrometry & Glycoproteome Informatics",
+    tagline: "Proteomics enabled by innovations in Chemical Biology, Mass Spectrometry & Glycoproteome Informatics",
     email: "alagesan@mpusp.mpg.de",
     website: "www.mpusp.mpg.de",
     orcid: "0000-0002-7596-5558",
     pubmedUrl: "https://pubmed.ncbi.nlm.nih.gov/?term=Alagesan+K%5BAuthor%5D&sort=date",
     googleScholarUrl: "https://scholar.google.com/scholar?q=kathirvel+alagesan",
-    about: "I lead the Proteomics Research Platform (PROT) at the Max Planck Unit for the Science of Pathogens. My work balances two core missions: directing state-of-the-art mass spectrometry infrastructure that empowers institute-wide research, and driving an independent scientific vision focused on systems glycobiology. Through innovations in analytical methodologies and informatics, I explore the dynamic interplay between host and pathogen from a glyco-centric perspective.",
+    about: "As Project Leader in Proteomics at MPUSP, I balance two core missions: directing state-of-the-art mass spectrometry infrastructure and leading independent scientific research in systems glycobiology.\n\nThrough innovations in analytical methods and informatics, I explore proteome & secretome dynamics and PTM regulation across biological systems to understand cellular physiology and host–pathogen interactions from a glyco-centric perspective.",
     profileImage: "profile.jpg",
     resumeLink: "Alagesan_CV_2026.pdf"
   },
-
-  pillars: [
-    {
-      title: "Technology",
-      description: "Sample preparation, New MS Instrumentation, Acquisition methods",
-      color: "pink"
-    },
-    {
-      title: "Informatics",
-      description: "New bioinformatics pipeline and tools for quantitative proteomics, PTMs & integration of Omics data",
-      color: "blue"
-    },
-    {
-      title: "Biology",
-      description: "Use of chemical and molecular biology to decode bacterial stress responses and pathogenesis",
-      color: "green"
-    }
-  ],
 
   platform: [
     {
@@ -68,6 +50,107 @@ const cvData = {
       link: "research-informatics.html"
     }
   ],
+
+  researchSubpages: {
+    glycobiology: {
+      title: "Infection Glycobiology",
+      subtitle: "Systems Glycoproteomics & Host-Pathogen Interactions",
+      quote: "Glycosylation is ubiquitous, yet its roles in host-pathogen interactions remain one of the least understood areas in molecular biology. We are changing that.",
+      mission: "We develop and apply high-end analytics to decipher the complex \"glycocode\" — decoding the structural diversity and functional implications of glycoconjugates produced by both host and pathogen.",
+      focusHeading: "Core Research Focus",
+      boxes: [
+        {
+          color: "navy",
+          title: "The Human GlycoAtlas Initiative",
+          text: "Defining the baseline of human glycosylation is essential for understanding infection. We are comprehensively mapping site-specific N- and O-glycosylation across human tissues and plasma to establish a definitive reference framework — elucidating the precise receptor topologies that pathogens exploit for adhesion, invasion, and immune evasion."
+        },
+        {
+          color: "peach",
+          title: "Infection Glycodynamics",
+          text: "Pathogens, including <em>S. pyogenes</em>, exploit highly specific glycan-lectin interactions to adhere, invade, and evade host immunity. We deploy advanced glycoproteomics to capture dynamic alterations in both host and bacterial glycoproteomes during infection — uncovering the molecular dialects that dictate virulence and inflammatory responses."
+        }
+      ],
+      caseStudyHeading: "Translational Impact",
+      caseStudy: {
+        reverseLayout: true,
+        image: "", // <-- Add your figure path here (e.g., "images/glycan_network.png")
+        placeholderText: "Figure Placeholder<br>Glycan Interaction Network",
+        eyebrow: "npj Vaccines · 2025",
+        title: "Glycoconjugate Vaccine Engineering",
+        paragraphs: [
+          "Translating fundamental glycobiology into clinical therapeutics requires absolute structural certainty. By leveraging our next-generation MS analytical platforms, we guide the development of recombinant glycoconjugate vaccines for Group A <em>Streptococcus</em>.",
+          "We provide rigorous validation of <em>in vivo</em> carrier protein glycosylation — analyzing complex glycan heterogeneity, resolving isomeric structures, and confirming precise site occupancy. Our FAIMS-assisted nanoLC-MS/MS workflows detected glycopeptides containing up to <strong>41 rhamnose residues</strong> with full structural confirmation."
+        ],
+        tags: ["Vaccine Development", "Glycoconjugates", "FAIMS-MS", "Structural Validation"]
+      }
+    },
+
+    technologies: {
+      title: "Next-Generation Technologies",
+      subtitle: "Analytical Method Development & Workflow Innovation",
+      quote: "To tackle the immense micro- and macro-heterogeneity of glycoconjugates, we develop robust, high-throughput analytical methodologies that break traditional norms.",
+      mission: "From protease multiplexing to EThcD fragmentation strategies — we continuously expand glycopeptide coverage and resolve complex isomeric structures.",
+      focusHeading: "Our Methodological Innovations",
+      boxes: [
+        {
+          color: "navy",
+          title: "Sample Preparation",
+          text: "We apply and develop novel sample preparation strategies, including SP3, Mag-Resyn bead-based workflows, and multi-protease digestion strategies. Protease multiplexing with enzymes beyond trypsin — Lys-C, Glu-C, Asp-N — dramatically expands sequence coverage and exposes glycosylation sites hidden from conventional workflows."
+        },
+        {
+          color: "peach",
+          title: "MS Acquisition & Fragmentation",
+          text: "Advanced fragmentation strategies including stepped-HCD (sHCD) and Electron-Transfer/Higher-energy Collision Dissociation (EThcD) allow simultaneous backbone and glycan fragmentation. Coupled with FAIMS Pro ion mobility separation and DIA acquisition modes, we achieve unprecedented depth in glycoproteome characterization from clinical and biological samples."
+        }
+      ],
+      caseStudyHeading: "Case Study",
+      caseStudy: {
+        reverseLayout: false,
+        image: "", // <-- Add your figure path here (e.g., "images/hcd_spectra.png")
+        placeholderText: "Figure Placeholder<br>HCD Spectra — NanA Glycopeptide",
+        eyebrow: "npj Vaccines · 2025 · Collaboration with Dorfmueller Lab, Dundee",
+        title: "Glycoconjugate Vaccine Development",
+        paragraphs: [
+          "PROT contributed to a landmark study developing a recombinant production platform for Group A <em>Streptococcus</em> glycoconjugate vaccines — cost-effective, scalable vaccines generated through <em>in vivo</em> glycosylation of carrier proteins in <em>E. coli</em>.",
+          "Our FAIMS-assisted nanoLC-MS/MS workflow delivered site-specific glycopeptide identification, glycan heterogeneity analysis, and glycoprotein integrity validation — including the detection of glycopeptides carrying up to <strong>41 rhamnose residues</strong>. Full structural confirmation at this scale is a remarkable methodological achievement."
+        ],
+        tags: ["FAIMS-MS/MS", "Glycopeptides", "Structural Validation", "Vaccine Platform"]
+      }
+    },
+
+    informatics: {
+      title: "Advanced Proteome Informatics",
+      subtitle: "Data Science, Visualization & FAIR Principles",
+      quote: "(Glyco)Proteomics is a data-rich field — but extracting biological meaning requires sophisticated, reproducible, and open tools.",
+      mission: "We build the SILAMBU modular ecosystem — translating raw mass spectrometry data into structured, FAIR-compliant biological knowledge.",
+      focusHeading: "Core Informatics Capabilities",
+      boxes: [
+        {
+          color: "navy",
+          title: "Software Tools & Pipelines",
+          text: "Development of robust bioinformatics pipelines for efficient data processing, peptide and protein identification, and quantification. We continuously evaluate multiple software strategies to optimize workflows — recognizing that no one-size-fits-all solution exists in proteomics data science."
+        },
+        {
+          color: "peach",
+          title: "Interactive KnowledgeBase",
+          text: "Building interactive knowledge bases to facilitate comprehensive data exploration, visualization, and dissemination. Improved FAIRness — Findability, Accessibility, Interoperability, and Reusability — is actively implemented across all our proteomics projects, culminating in the MPUSP Proteomics Knowledgebase."
+        }
+      ],
+      caseStudyHeading: "Featured Tool",
+      caseStudy: {
+        reverseLayout: true,
+        image: "", // <-- Add your figure path here (e.g., "images/magnum_tool.png")
+        placeholderText: "Figure Placeholder<br>Magnum Peptide Investigator",
+        eyebrow: "SILAMBU Ecosystem · Visualization Module",
+        title: "Magnum Peptide Investigator",
+        paragraphs: [
+          "Protein sequence coverage maps are essential to proteomics — showing how peptides distribute across their parent protein. <strong>Magnum</strong> was developed as an independent, interactive tool for visualizing peptide sequence coverage across multiple samples, while providing a comprehensive heatmap overview of individual peptide intensities.",
+          "<em>Example: Peptide mapping of Fetuin across 10 human tissue lysates with interactive protein detection side panel.</em>"
+        ],
+        tags: ["Open Source", "Visualization", "FAIR Data", "Sequence Coverage"]
+      }
+    }
+  },
 
   publicationHighlights: [
     {
@@ -107,8 +190,6 @@ const cvData = {
       duration: "July 2022 – Present",
       description: [
         "Lead the Proteomics Research Platform, providing end-to-end LC-MS services to >30 researchers across MPUSP and collaborating institutes (200 registered project submissions, 25 external collaborations since 2021).",
-        "Direct platform operations, resource planning, and quality management across Orbitrap Exploris 480 and Fusion Lumos systems with FAIMS PRO.",
-        "Develop high-throughput workflows (SP3, automated liquid handling via Agilent Bravo) and specialized microbial and PTM proteomics assays.",
         "Developed Karuppar, an automated LC-MS/MS quality-control and monitoring system for continuous assessment of instrument performance, alongside the SILAMBU modular ecosystem."
       ]
     },
@@ -126,7 +207,6 @@ const cvData = {
       organization: "Institute for Biomedicine and Glycomics (formerly Institute for Glycomics), Griffith University, Australia",
       duration: "Mar 2017 – Aug 2020",
       description: [
-        "Established 'Glycomics & Glycoproteomics in Cancer and Evolution' research group together with Prof. Daniel Kolarich.",
         "Actively involved in planning and establishment of an advanced mass spectrometry facility.",
         "Developed chemo-enzymatic workflow for diversification of N-glycopeptides.",
         "Built automated glycan analysis tools for clinical samples."
@@ -202,10 +282,8 @@ const cvData = {
 
   talks: [
     "MPUSP-UCMR Mini-Symposium, Germany (2026) — 'The molecular playbook of bacterial survival: decoding proteome and glycome remodeling during stress and infection'",
-    "25th Human Proteome Organization World Congress (HUPO 2026), Singapore — 'Rebel, Rebel: Breaking Norms with Protease Multiplexing for Glycoproteomics'",
     "20th Central & Eastern European Proteomic Conference, Zagreb (2026) — 'Rebel, Rebel: Breaking Norms with Protease Multiplexing for Glycoproteomics'",
     "AICTE Training & Learning Academy (2026) — 'From Amino to Glyco: The sweet side of proteomics'",
-    "Gordon Research Conference (GRC) – Glycobiology (2025) — 'Rebel, Rebel: Breaking the norms of protease multiplexing'",
     "MPUSP-HU Retreat, Schwerin (2025) — 'From Amino to Glyco: The Evolution of the Proteomics Research Platform'",
     "IZW Seminar Series, Berlin (2024) — 'Sugar, Spice & Spectral Insights: (Glyco)Proteomics Unwrapped'",
     "Technische Universität Berlin (2021) — 'The sweet side of proteomics' (invited by Prof. Juri Rappsilber)",

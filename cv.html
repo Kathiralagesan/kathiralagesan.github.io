@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Curriculum Vitae, Education, Academic Leadership, and Invited Talks of Dr. Kathirvel Alagesan.">
+    <meta name="google-site-verification" content="M2EP-Uqpj0NQas1eNHSiCozvgyFSXLWA8i90FR-kQQc" />
+    <title>Curriculum Vitae & Academic Record — Dr. Kathirvel Alagesan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .page-header { padding: 160px 3rem 60px; text-align: center; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo"><a href="index.html" style="text-decoration: none; color: inherit;">KA.</a></div>
+            <ul class="nav-links">
+                <li><a href="index.html">← Back to Main</a></li>
+                <li><a href="platform-details.html">Platform</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="index.html#highlights">Publications</a></li>
+            </ul>
+            <a href="Alagesan_CV_2026.pdf" target="_blank" class="nav-cta">Download PDF ↓</a>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="page-header bg-navy">
+        <div class="hero-eyebrow">ACADEMIC &amp; PROFESSIONAL RECORD</div>
+        <h1 style="font-size: clamp(3rem, 5vw, 5rem);">Curriculum Vitae</h1>
+        <p style="font-size: 1.25rem; font-style: italic; color: rgba(255,255,255,0.9); margin-top: 1.2rem; max-width: 800px; margin-left: auto; margin-right: auto;">
+            A 15-year trajectory in mass spectrometry leadership, systems glycobiology, and international scientific service.
+        </p>
+        <div style="margin-top: 2.2rem;">
+            <a href="Alagesan_CV_2026.pdf" target="_blank" class="btn pub-btn">Download Full CV (PDF) ↓</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Research Experience -->
+        <section id="experience" class="section bg-peach">
+            <div class="section-content" style="max-width: 900px; margin: 0 auto;">
+                <h2 class="column-title">Research Experience</h2>
+                <div class="timeline" id="experience-container"></div>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section id="education" class="section bg-pink">
+            <div class="section-content" style="max-width: 900px; margin: 0 auto;">
+                <h2 class="column-title">Education</h2>
+                <div class="timeline" id="education-container"></div>
+            </div>
+        </section>
+
+        <!-- Leadership & Service -->
+        <section id="leadership" class="section bg-peach">
+            <div class="section-content">
+                <div class="section-header-split">
+                    <div>
+                        <h2>Leadership &amp; Outreach</h2>
+                    </div>
+                    <p class="section-description">Peer recognition as an expert reviewer at national and international levels, alongside active commitments to open science, science communication, and community leadership.</p>
+                </div>
+                <div class="leadership-grid" id="leadership-container"></div>
+            </div>
+        </section>
+
+        <!-- Talks -->
+        <section id="talks" class="section bg-teal">
+            <div class="section-content">
+                <h2 class="column-title" style="border-bottom-color: rgba(255,255,255,0.2); color: #fff;">Invited Talks</h2>
+                <ul id="talks-container" class="talks-list"></ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p class="footer-sub">&copy; Dr. Kathirvel Alagesan — Last updated: <span id="last-update"></span></p>
+            <div class="footer-links">
+                <a id="footer-orcid" href="#" target="_blank">ORCID</a>
+                <a id="footer-pubmed" href="#" target="_blank">PubMed</a>
+                <a id="footer-email" href="#">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

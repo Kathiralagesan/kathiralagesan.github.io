@@ -7,13 +7,23 @@ document.addEventListener("DOMContentLoaded", () => {
     const p = data.profile;
 
     // ── Profile / Hero ──────────────────────────────────────────────
-    document.getElementById("profile-name").textContent = p.name;
-    document.getElementById("profile-title").textContent = p.title;
-    document.getElementById("profile-institution").textContent = p.institution;
-    document.getElementById("profile-tagline").textContent = p.tagline;
-    document.getElementById("profile-about").textContent = p.about;
-    document.getElementById("profile-image").src = p.profileImage || "";
-    document.getElementById("profile-resume").href = p.resumeLink;
+    const setText = (id, text) => { const el = document.getElementById(id); if (el) el.textContent = text; };
+    setText("profile-name", p.name);
+    setText("profile-title", p.title);
+    setText("profile-institution", p.institution);
+    setText("profile-tagline", p.tagline);
+    
+    // About text (support multi-paragraph formatted)
+    const aboutEl = document.getElementById("profile-about");
+    if (aboutEl && p.about) {
+        aboutEl.innerHTML = p.about.split('\n\n').map(para => `<p style="margin-bottom: 1.2rem;">${para.trim()}</p>`).join('');
+    }
+
+    const imgEl = document.getElementById("profile-image");
+    if (imgEl) imgEl.src = p.profileImage || "";
+
+    const resumeEl = document.getElementById("profile-resume");
+    if (resumeEl) resumeEl.href = p.resumeLink;
 
     // Email buttons
     ["profile-email","about-email","footer-email","nav-contact","cta-email"].forEach(id => {
@@ -48,22 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Footer
     const dateOpts = { day: '2-digit', month: 'short', year: 'numeric' };
     const today = new Date().toLocaleDateString('en-GB', dateOpts);
-    document.getElementById("last-update").textContent = today;
-
-    // ── Pillars Graphic ──────────────────────────────────────────────
-    const pillarsContainer = document.getElementById("pillars-container");
-    if (data.pillars && pillarsContainer) {
-        data.pillars.forEach(pillar => {
-            const el = document.createElement("div");
-            el.className = `pillar-card pillar-${pillar.color}`;
-            el.innerHTML = `
-                <div class="pillar-icon"></div>
-                <h3>${pillar.title}</h3>
-                <p>${pillar.description}</p>
-            `;
-            pillarsContainer.appendChild(el);
-        });
-    }
+    setText("last-update", today);
 
     // ── Helper to Render Alternating Cards ────────────────────────────────────────
     function renderCards(containerId, itemsArray) {
@@ -108,85 +103,138 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // ── Publication Highlights ──────────────────────────────────────────────
     const highlightsContainer = document.getElementById("highlights-container");
-    (data.publicationHighlights || []).forEach(pub => {
-        const pubEl = document.createElement("a");
-        pubEl.className = "highlight-card";
-        pubEl.href = pub.link;
-        pubEl.target = "_blank";
-        pubEl.rel = "noopener noreferrer";
+    if (highlightsContainer && data.publicationHighlights) {
+        data.publicationHighlights.forEach(pub => {
+            const pubEl = document.createElement("a");
+            pubEl.className = "highlight-card";
+            pubEl.href = pub.link;
+            pubEl.target = "_blank";
+            pubEl.rel = "noopener noreferrer";
 
-        const imageHtml = pub.image
-            ? `<img src="${pub.image}" alt="${pub.title}" class="highlight-img">`
-            : `<div class="highlight-image-placeholder"><span>Graphical Abstract</span></div>`;
+            const imageHtml = pub.image
+                ? `<img src="${pub.image}" alt="${pub.title}" class="highlight-img">`
+                : `<div class="highlight-image-placeholder"><span>Graphical Abstract</span></div>`;
 
-        pubEl.innerHTML = `
-            <div class="highlight-image-wrapper">${imageHtml}</div>
-            <div class="highlight-info">
-                <span class="highlight-journal">${pub.journal}</span>
-                <h3 class="serif-title small">${pub.title}</h3>
-                <p>${pub.significance}</p>
-                <span class="read-more">View Publication →</span>
-            </div>
-        `;
-        highlightsContainer.appendChild(pubEl);
-    });
+            pubEl.innerHTML = `
+                <div class="highlight-image-wrapper">${imageHtml}</div>
+                <div class="highlight-info">
+                    <span class="highlight-journal">${pub.journal}</span>
+                    <h3 class="serif-title small">${pub.title}</h3>
+                    <p>${pub.significance}</p>
+                    <span class="read-more">View Publication →</span>
+                </div>
+            `;
+            highlightsContainer.appendChild(pubEl);
+        });
+    }
 
     // ── Leadership & Service ──────────────────────────────────────────────
     const leadershipContainer = document.getElementById("leadership-container");
-    (data.leadershipAndService || []).forEach(item => {
-        const el = document.createElement("div");
-        el.className = "leadership-card";
-        el.innerHTML = `
-            <div class="leadership-year">${item.year}</div>
-            <div class="leadership-content">
-                <h3>${item.role}</h3>
-                <p>${item.body}</p>
-            </div>
-        `;
-        leadershipContainer.appendChild(el);
-    });
+    if (leadershipContainer && data.leadershipAndService) {
+        data.leadershipAndService.forEach(item => {
+            const el = document.createElement("div");
+            el.className = "leadership-card";
+            el.innerHTML = `
+                <div class="leadership-year">${item.year}</div>
+                <div class="leadership-content">
+                    <h3>${item.role}</h3>
+                    <p>${item.body}</p>
+                </div>
+            `;
+            leadershipContainer.appendChild(el);
+        });
+    }
 
     // ── Experience ──────────────────────────────────────────────
     const expContainer = document.getElementById("experience-container");
-    data.experience.forEach(exp => {
-        const item = document.createElement("div");
-        item.className = "timeline-item";
-        const descHtml = exp.description.map(d => `<li>${d}</li>`).join("");
-        item.innerHTML = `
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-                <span class="timeline-date">${exp.duration}</span>
-                <h3 class="serif-title small">${exp.role}</h3>
-                <h4>${exp.organization}</h4>
-                <ul>${descHtml}</ul>
-            </div>
-        `;
-        expContainer.appendChild(item);
-    });
+    if (expContainer && data.experience) {
+        data.experience.forEach(exp => {
+            const item = document.createElement("div");
+            item.className = "timeline-item";
+            const descHtml = exp.description.map(d => `<li>${d}</li>`).join("");
+            item.innerHTML = `
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">${exp.duration}</span>
+                    <h3 class="serif-title small">${exp.role}</h3>
+                    <h4>${exp.organization}</h4>
+                    <ul>${descHtml}</ul>
+                </div>
+            `;
+            expContainer.appendChild(item);
+        });
+    }
 
     // ── Education ──────────────────────────────────────────────
     const eduContainer = document.getElementById("education-container");
-    data.education.forEach(edu => {
-        const item = document.createElement("div");
-        item.className = "timeline-item";
-        item.innerHTML = `
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-                <span class="timeline-date">${edu.duration}</span>
-                <h3 class="serif-title small">${edu.degree}</h3>
-                <h4>${edu.institution}</h4>
-                <p>${edu.description}</p>
-            </div>
-        `;
-        eduContainer.appendChild(item);
-    });
+    if (eduContainer && data.education) {
+        data.education.forEach(edu => {
+            const item = document.createElement("div");
+            item.className = "timeline-item";
+            item.innerHTML = `
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">${edu.duration}</span>
+                    <h3 class="serif-title small">${edu.degree}</h3>
+                    <h4>${edu.institution}</h4>
+                    <p>${edu.description}</p>
+                </div>
+            `;
+            eduContainer.appendChild(item);
+        });
+    }
 
     // ── Talks ──────────────────────────────────────────────
     const talksContainer = document.getElementById("talks-container");
-    (data.talks || []).forEach(talk => {
-        const li = document.createElement("li");
-        li.className = "talk-item";
-        li.textContent = talk;
-        talksContainer.appendChild(li);
-    });
+    if (talksContainer && data.talks) {
+        data.talks.forEach(talk => {
+            const li = document.createElement("li");
+            li.className = "talk-item";
+            li.textContent = talk;
+            talksContainer.appendChild(li);
+        });
+    }
+
+    // ── Research Subpages (Glycobiology, Technologies, Informatics) ──────────
+    const subpageKey = document.body.getAttribute("data-subpage");
+    if (subpageKey && data.researchSubpages && data.researchSubpages[subpageKey]) {
+        const sp = data.researchSubpages[subpageKey];
+        setText("subpage-title", sp.title);
+        setText("subpage-subtitle", sp.subtitle);
+        setText("subpage-quote", sp.quote);
+        setText("subpage-mission", sp.mission);
+        setText("subpage-focus-heading", sp.focusHeading);
+        setText("subpage-case-heading", sp.caseStudyHeading);
+
+        const boxesEl = document.getElementById("subpage-boxes");
+        if (boxesEl && sp.boxes) {
+            boxesEl.innerHTML = sp.boxes.map(b => `
+                <div class="role-box ${b.color || 'navy'}">
+                    <h3>${b.title}</h3>
+                    <p>${b.text}</p>
+                </div>
+            `).join("");
+        }
+
+        const caseEl = document.getElementById("subpage-case-card");
+        if (caseEl && sp.caseStudy) {
+            const cs = sp.caseStudy;
+            caseEl.className = `project-card ${cs.reverseLayout ? 'row-reverse' : ''}`;
+            const imgHtml = cs.image
+                ? `<img src="${cs.image}" alt="${cs.title}" class="project-img">`
+                : `<div class="project-image-placeholder"><span style="font-size: 1rem; letter-spacing: 0.05em;">${cs.placeholderText || 'Figure Placeholder'}</span></div>`;
+            const parasHtml = (cs.paragraphs || []).map(pText => `<p>${pText}</p>`).join("");
+            const tagsHtml = (cs.tags || []).map(t => `<span class="tag">${t}</span>`).join("");
+
+            caseEl.innerHTML = `
+                <div class="project-image-wrapper">${imgHtml}</div>
+                <div class="project-info">
+                    <span style="display: block; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-bg-teal); margin-bottom: 1rem;">${cs.eyebrow || ''}</span>
+                    <h3 class="serif-title">${cs.title}</h3>
+                    ${parasHtml}
+                    <div class="project-tags" style="margin-top: 1.5rem;">${tagsHtml}</div>
+                </div>
+            `;
+        }
+    }
 });
