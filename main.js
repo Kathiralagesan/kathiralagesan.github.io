@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     setText("profile-title", p.title);
     setText("profile-institution", p.institution);
     setText("profile-tagline", p.tagline);
+    setText("profile-tagline-subtitle", p.taglineSubtitle);
     
     // About text (support multi-paragraph formatted)
     const aboutEl = document.getElementById("profile-about");
