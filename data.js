@@ -10,7 +10,7 @@ const cvData = {
     orcid: "0000-0002-7596-5558",
     pubmedUrl: "https://pubmed.ncbi.nlm.nih.gov/?term=Alagesan+K%5BAuthor%5D&sort=date",
     googleScholarUrl: "https://scholar.google.com/scholar?q=kathirvel+alagesan",
-    about: "<strong>In cellular systems, proteins rarely act in isolation</strong>: their biological functions are governed by dynamic post-translational modifications and macromolecular networks. As Project Leader in Proteomics at MPUSP, I direct the proteomics platform while pursuing independent research in <strong>analytical glycoproteomics and host–pathogen glycobiology</strong>.\n\nOver the past 15 years, I have developed mass spectrometry-based approaches in large-scale proteomics, glycoproteomics, and structural glycomics, with core <strong>expertise in site-specific glycopeptide analysis and isomeric glycan characterization</strong>. At MPUSP, I have expanded this foundation to broader post-translational regulatory mechanisms, investigating PTM crosstalk, protein–RNA complexes, extracellular vesicles, and bacterial and human secretomes.\n\nMy approach combines automated robotics and microscale SP3 workflows with advanced hybrid mass spectrometry, ion mobility, and electron-transfer dissociation (ETD). In parallel, as an Open Science Ambassador for the Max Planck Society, I develop open informatics tools, including the <strong>Karuppar MS-QC system</strong> within SILAMBU, championing <strong>FAIR data practices</strong> to advance reproducibility across proteomics.",
+    about: "<strong>In cellular systems, proteins rarely act in isolation</strong>: their biological functions are governed by dynamic post-translational modifications and macromolecular networks. As Project Leader in Proteomics at MPUSP, I direct the proteomics platform while pursuing independent research in <strong>analytical glycoproteomics and host–pathogen glycobiology</strong>.\n\nOver the past 15 years, I have developed mass spectrometry-based approaches in large-scale proteomics, glycoproteomics, and structural glycomics, with core <strong>expertise in site-specific glycopeptide analysis and isomeric glycan characterization</strong>. At MPUSP, I have expanded this foundation to broader post-translational modifications(PTMs), investigating PTM crosstalk, protein–RNA complexes, extracellular vesicles, and bacterial and human secretomes.\n\nMy approach combines automated robotics and microscale SP3 workflows with advanced hybrid mass spectrometry & fragmentation, and ion mobility separation. In parallel, as an Open Science Ambassador for the Max Planck Society, I develop open informatics tools, including the <strong>Karuppar MS-QC system</strong> within SILAMBU, championing <strong>FAIR data practices</strong> to advance reproducibility across proteomics, glycomics, and glycoproteomics.",
     profileImage: "profile.jpg",
     resumeLink: "Alagesan_CV_2026.pdf",
     lastUpdated: "19 Oct 2026"
@@ -38,7 +38,7 @@ const cvData = {
     {
       id: "next-gen-proteomics",
       title: "Next-Generation Proteomic Technologies",
-      description: "To tackle the immense micro- and macro-heterogeneity of glycoconjugates, we develop robust, high-throughput analytical methodologies. We are breaking traditional analytical norms to improve glycopeptide coverage and resolve complex isomeric glycan structures in clinical and biological samples.",
+      description: "To tackle the immense micro- and macro-heterogeneity of glycoproteins, we develop robust, high-throughput analytical methodologies. We are breaking traditional analytical norms to improve glycopeptide coverage and resolve complex isomeric glycan structures in clinical and biological samples.",
       image: "images/Glyco_illu.jpg",
       tags: ["Method Development", "Protease Multiplexing", "Isomeric Resolution", "Analytical Chemistry"],
       link: "research-technologies.html"
@@ -233,7 +233,7 @@ const cvData = {
       degree: "B.Tech Biotechnology",
       institution: "Kumaraguru College of Technology, India (Affiliated to Anna University)",
       duration: "2005 – 2009",
-      description: "Thesis: Isolation and identification of α-glucosidase inhibitors from medicinal plants.'"
+      description: "Thesis: 'Isolation and identification of α-glucosidase inhibitors from medicinal plants.'"
     }
   ],
 
