@@ -202,23 +202,6 @@
         </div>
     </section>
 
-    <!-- 4. PINK: Research Focus & Physiology at MPUSP (Clean Editorial Prose & Bullets) -->
-    <section class="section bg-pink">
-        <div class="section-content">
-            <h2 style="font-size: 2.2rem; color: var(--color-bg-navy); border-bottom: 2px solid var(--color-bg-navy); padding-bottom: 0.5rem; margin-bottom: 1.5rem;">Research Focus &amp; Physiology at MPUSP</h2>
-            <p style="font-size: 1.15rem; line-height: 1.8; color: var(--color-bg-navy); margin-bottom: 1.5rem;">
-                At MPUSP, we integrate state-of-the-art mass spectrometry and chemical tools with ribosomal profiling and transcriptomics to monitor protein dynamics in cellular and host–pathogen systems exposed to environmental stress and infection:
-            </p>
-            <div class="page-content" style="padding: 0; max-width: 100%;">
-                <ul style="font-size: 1.1rem; line-height: 1.8; color: var(--color-bg-navy); margin-bottom: 0;">
-                    <li><strong>Host &amp; bacterial proteome organization:</strong> Understanding how proteins are structured, localized, and remodeled across host and microbial cells.</li>
-                    <li><strong>Protein–RNA interactions:</strong> Studying dynamic complexes between regulatory proteins and RNA molecules.</li>
-                    <li><strong>Infection-driven protein &amp; PTM dynamics:</strong> Analyzing dynamic expression and PTM crosstalk (phosphorylation, glycosylation) during active infection and immune signaling.</li>
-                    <li style="margin-bottom: 0;"><strong>Stress-driven proteome remodeling:</strong> Characterizing adaptive changes in translation, ribosome stability, and secretomes in response to nutrient limitation and cellular stress.</li>
-                </ul>
-            </div>
-        </div>
-    </section>
 
     <!-- 5. NAVY: Infrastructure (Boxed Hardware Cards) -->
     <section class="section bg-navy" style="color: white;">
@@ -316,17 +299,19 @@
         </div>
     </section>
 
-    <!-- NAVY: Footer -->
-    <footer class="bg-navy">
-        <div class="footer-content" style="padding: 4rem 3rem; text-align: center;">
-            <p class="footer-sub" style="color: rgba(255,255,255,0.7); font-size: 0.95rem;">&copy; Dr. Kathirvel Alagesan</p>
-            <div class="footer-links" style="margin-top: 1rem; display: flex; justify-content: center; gap: 1.5rem;">
-                <a href="https://orcid.org/0000-0002-7596-5558" target="_blank" style="color: rgba(255,255,255,0.8); text-decoration: none;">ORCID</a>
-                <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Alagesan+K%5BAuthor%5D&sort=date" target="_blank" style="color: rgba(255,255,255,0.8); text-decoration: none;">PubMed</a>
-                <a href="mailto:alagesan@mpusp.mpg.de" style="color: rgba(255,255,255,0.8); text-decoration: none;">Email</a>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p class="footer-sub">&copy; Dr. Kathirvel Alagesan — Last updated: <span id="last-update"></span></p>
+            <div class="footer-links">
+                <a id="footer-orcid" href="#" target="_blank">ORCID</a>
+                <a id="footer-pubmed" href="#" target="_blank">PubMed</a>
+                <a id="footer-email" href="#">Email</a>
             </div>
         </div>
     </footer>
 
+    <script src="data.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>

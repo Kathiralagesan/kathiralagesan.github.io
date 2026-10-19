@@ -56,10 +56,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const scholarEl = document.getElementById("scholar-link");
     if (scholarEl) scholarEl.href = p.googleScholarUrl;
 
-    // Footer
-    const dateOpts = { day: '2-digit', month: 'short', year: 'numeric' };
-    const today = new Date().toLocaleDateString('en-GB', dateOpts);
-    setText("last-update", today);
+    // Footer Last Updated Date
+    setText("last-update", p.lastUpdated || "19 Oct 2026");
 
     // ── Helper to Render Alternating Cards ────────────────────────────────────────
     function renderCards(containerId, itemsArray) {

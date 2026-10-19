@@ -12,7 +12,8 @@ const cvData = {
     googleScholarUrl: "https://scholar.google.com/scholar?q=kathirvel+alagesan",
     about: "As Project Leader of the Proteomics Platform at MPUSP, I balance the strategic direction of a high-throughput mass spectrometry facility with an independent research focus on systems glycobiology. With over 15 years of LC–MS experience, I design and deploy quantitative proteomics workflows to address challenging biological questions across both microbial pathogenesis and human model systems.\n\nMy analytical portfolio encompasses deep discovery proteomics (DDA/DIA), multi-PTM characterisation (glycoproteomics, phosphoproteomics, PTM crosstalk), RNA–protein interactions, and low-input samples such as bacterial secretomes, extracellular vesicles, and small proteins. Dedicated to reproducible science, I integrate automated sample robotics, FAIR data principles, and in-house QC systems (Karuppar) into routine facility operations.",
     profileImage: "profile.jpg",
-    resumeLink: "Alagesan_CV_2026.pdf"
+    resumeLink: "Alagesan_CV_2026.pdf",
+    lastUpdated: "19 Oct 2026"
   },
 
   platform: [
