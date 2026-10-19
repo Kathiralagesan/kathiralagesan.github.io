@@ -12,6 +12,55 @@
     <link rel="stylesheet" href="style.css">
     <style>
         .page-header { padding: 160px 3rem 60px; text-align: center; }
+
+        /* Publications List Styling */
+        .platform-pub-list {
+            list-style: none;
+            padding: 0;
+            margin: 2rem 0 0 0;
+        }
+        .platform-pub-item {
+            padding: 1.4rem 0;
+            border-bottom: 1px solid rgba(43, 48, 76, 0.2);
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+        }
+        .platform-pub-item:first-child {
+            border-top: 1px solid rgba(43, 48, 76, 0.2);
+        }
+        .platform-pub-meta {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+        }
+        .platform-pub-journal {
+            font-family: var(--font-heading);
+            font-size: 0.9rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--color-bg-teal);
+        }
+        .platform-pub-title {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--color-bg-navy);
+            text-decoration: none;
+            line-height: 1.45;
+            transition: opacity 0.2s;
+        }
+        .platform-pub-title:hover {
+            opacity: 0.7;
+            text-decoration: underline;
+        }
+        .platform-pub-desc {
+            font-size: 0.98rem;
+            color: var(--color-bg-navy);
+            line-height: 1.6;
+            opacity: 0.9;
+        }
     </style>
 </head>
 <body>
@@ -29,7 +78,7 @@
         </div>
     </nav>
 
-    <!-- Header -->
+    <!-- 1. Header (NAVY) -->
     <header class="page-header bg-navy">
         <div class="hero-eyebrow">RESEARCH PROGRAM</div>
         <h1 style="font-size: clamp(2.8rem, 5vw, 4.8rem);">(Glyco)Proteomics &amp; Analytical Innovation</h1>
@@ -39,13 +88,95 @@
         </p>
     </header>
 
+    <!-- 2. Mission Statement Banner (TEAL) -->
+    <div class="tagline-banner bg-teal">
+        <div class="tagline-content">
+            <h2 style="font-size: clamp(1.8rem, 2.7vw, 2.5rem); font-weight: 700; color: #fff; margin-bottom: 1rem;">Decoding the Molecular Language of the Cell Surface</h2>
+            <p style="font-size: 1.2rem; font-style: italic; line-height: 1.7; color: rgba(255, 255, 255, 0.95); max-width: 900px; margin: 0 auto;">
+                Protein glycosylation and post-translational modifications represent the functional frontier of cellular phenotypes. We invent high-precision analytical methods, gas-phase separations, and computational tools to make this critical biology visible and interpretable.
+            </p>
+        </div>
+    </div>
+
     <main>
-        <!-- Independent Research Pillars -->
+        <!-- 3. The Three Scientific Pillars (PEACH) -->
         <section id="research" class="section bg-peach">
-            <div class="section-content" id="research-container"></div>
+            <div class="section-content">
+                <div style="border-bottom: 2px solid var(--color-text-main); padding-bottom: 0.5rem; margin-bottom: 2.5rem;">
+                    <h2 style="font-size: 2.2rem; color: var(--color-bg-navy); margin: 0;">Core Scientific Pillars</h2>
+                </div>
+                <div id="research-container"></div>
+            </div>
+        </section>
+
+        <!-- 4. Selected Research & Methodological Output (PINK) -->
+        <section class="section bg-pink">
+            <div class="section-content">
+                <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; border-bottom: 2px solid var(--color-bg-navy); padding-bottom: 0.5rem; margin-bottom: 1.5rem; gap: 1rem;">
+                    <h2 style="font-size: 2.2rem; color: var(--color-bg-navy); margin: 0;">Selected Research &amp; Methodological Output</h2>
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Alagesan+K%5BAuthor%5D&sort=date" target="_blank" class="btn pub-btn" style="font-size: 0.8rem; padding: 0.45rem 1.2rem;">Full PubMed List →</a>
+                </div>
+                <p style="font-size: 1.1rem; color: var(--color-bg-navy); line-height: 1.7;">
+                    Representative discoveries and analytical advancements across infection glycobiology, mass spectrometry workflows, and proteome informatics:
+                </p>
+
+                <ul class="platform-pub-list">
+                    <li class="platform-pub-item">
+                        <div class="platform-pub-meta">
+                            <span class="platform-pub-journal">npj Vaccines · 2025</span>
+                        </div>
+                        <a href="https://doi.org/10.1038/s41541-025-01068-2" target="_blank" class="platform-pub-title">
+                            Recombinant production platform for Group A Streptococcus glycoconjugate vaccines →
+                        </a>
+                        <span class="platform-pub-desc">FAIMS-assisted nanoLC-MS/MS discovery and structural verification of carrier protein glycopeptides carrying up to 41 rhamnose residues.</span>
+                    </li>
+
+                    <li class="platform-pub-item">
+                        <div class="platform-pub-meta">
+                            <span class="platform-pub-journal">Nature Methods · 2021</span>
+                        </div>
+                        <a href="https://doi.org/10.1038/s41592-021-01309-x" target="_blank" class="platform-pub-title">
+                            Community evaluation of glycoproteomics informatics solutions reveals high-performance search strategies for serum glycopeptide analysis →
+                        </a>
+                        <span class="platform-pub-desc">International multi-center benchmark establishing standardized performance criteria for glycopeptide identification pipelines.</span>
+                    </li>
+
+                    <li class="platform-pub-item">
+                        <div class="platform-pub-meta">
+                            <span class="platform-pub-journal">Theranostics · 2021</span>
+                        </div>
+                        <a href="https://doi.org/10.7150/thno.65398" target="_blank" class="platform-pub-title">
+                            Glycoproteome remodeling in MLL-rearranged B-cell precursor acute lymphoblastic leukemia →
+                        </a>
+                        <span class="platform-pub-desc">Quantitative glycoproteomics uncovering disease-specific cell-surface glycan remodeling and candidate therapeutic targets.</span>
+                    </li>
+
+                    <li class="platform-pub-item">
+                        <div class="platform-pub-meta">
+                            <span class="platform-pub-journal">Analytical &amp; Bioanalytical Chemistry · 2017</span>
+                        </div>
+                        <a href="https://doi.org/10.1007/s00216-016-0046-6" target="_blank" class="platform-pub-title">
+                            Systematic optimization of mobile phase parameters for enhanced ZIC-HILIC enrichment of glycopeptides →
+                        </a>
+                        <span class="platform-pub-desc">Foundational chromatographic method development establishing optimal organic-aqueous gradients for high-recovery glycopeptide enrichment.</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 5. Collaborate / Contact CTA (TEAL) -->
+        <section class="section bg-teal">
+            <div class="section-content" style="text-align: center;">
+                <h2 style="font-size: 2rem; color: #ffffff; margin-bottom: 1.5rem; text-transform: uppercase;">Explore Research Collaborations</h2>
+                <p style="font-size: 1.25rem; color: rgba(255,255,255,0.95); max-width: 800px; margin: 0 auto 2rem; line-height: 1.7;">
+                    Interested in joint research projects, visiting scholar opportunities, or academic exchange in (glyco)proteomics and mass spectrometry?
+                </p>
+                <a href="mailto:alagesan@mpusp.mpg.de" class="btn pub-btn" style="display: inline-block; padding: 1rem 2.2rem; text-decoration: none; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;">Get in Touch</a>
+            </div>
         </section>
     </main>
 
+    <!-- 6. Footer (NAVY) -->
     <footer>
         <div class="footer-content">
             <p class="footer-sub">&copy; Dr. Kathirvel Alagesan — Last updated: <span id="last-update"></span></p>
