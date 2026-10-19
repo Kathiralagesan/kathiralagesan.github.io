@@ -20,11 +20,11 @@
         .page-content li { margin-bottom: 1rem; padding-left: 1.5rem; position: relative; line-height: 1.7; }
         .page-content li::before { content: "▪"; position: absolute; left: 0; color: var(--color-bg-teal); }
 
-        /* 2x2 Editorial Grid (Non-boxy, top-border accent) */
+        /* Editorial Capabilities Grid (Non-boxy, top-border accent) */
         .capabilities-editorial-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem 3.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem 3rem;
             margin-top: 2.5rem;
         }
         .capability-column {
@@ -157,7 +157,7 @@
                 </div>
                 <div class="project-info">
                     <h3 class="serif-title">Proteomics Platform Leadership</h3>
-                    <p>I manage state-of-the-art mass spectrometry operations providing end-to-end analytical services to &gt;30 researchers across MPUSP and collaborating institutes. Since 2021, the platform has delivered results for over 200 registered project submissions and 25 external collaborations, backed by automated sample processing (Agilent Bravo), our Karuppar automated LC-MS/MS QC system, and FAIR-compliant data dissemination.</p>
+                    <p>I manage state-of-the-art mass spectrometry operations providing end-to-end analytical services to &gt;30 researchers across MPUSP and collaborating institutes. Since 2021, the platform has delivered results for over 200 registered project submissions and 25 external collaborations, backed by automated liquid-handling robotics, our Karuppar automated LC-MS/MS QC system, and FAIR-compliant data dissemination.</p>
                     <div class="project-tags" style="margin-top: 1rem;">
                         <span class="tag">Infrastructure Management</span>
                         <span class="tag">Orbitrap MS</span>
@@ -169,7 +169,7 @@
         </div>
     </section>
 
-    <!-- 3. PEACH: Analytical Capabilities & Workflows (2x2 Editorial Grid, Non-boxy) -->
+    <!-- 3. PEACH: Analytical Capabilities & Workflows (5 Portfolio Pillars) -->
     <section class="section bg-peach">
         <div class="section-content">
             <h2 style="font-size: 2.2rem; color: var(--color-bg-navy); border-bottom: 2px solid var(--color-text-main); padding-bottom: 0.5rem; margin-bottom: 1.5rem;">Analytical Capabilities &amp; Workflows</h2>
@@ -179,24 +179,29 @@
 
             <div class="capabilities-editorial-grid">
                 <div class="capability-column">
-                    <span class="capability-num">01 · Proteome &amp; Secretome Profiling</span>
-                    <h3>Quantitative &amp; Discovery Proteomics</h3>
-                    <p>High-depth DDA, DIA, and targeted PRM workflows for whole proteomes, secretomes, extracellular vesicles (EVs), and low-abundance small proteins across diverse biological matrices.</p>
+                    <span class="capability-num">01 · Discovery &amp; Quantitative Proteomics</span>
+                    <h3>Whole-Proteome &amp; Secretome Profiling</h3>
+                    <p>High-depth DDA, DIA, and targeted PRM workflows across complex matrices—characterizing cellular proteomes, bacterial secretomes, extracellular vesicles (EVs), and low-abundance small proteins.</p>
                 </div>
                 <div class="capability-column">
-                    <span class="capability-num">02 · Protein Modifications</span>
-                    <h3>PTMs &amp; Glycoproteomics</h3>
-                    <p>Specialized enrichment and FAIMS/EThcD acquisition for site-specific N- and O-glycoproteomics, intact glycomics, phosphoproteomics, and multi-PTM crosstalk.</p>
+                    <span class="capability-num">02 · PTMs &amp; Chemical Proteomics</span>
+                    <h3>Modifications &amp; Glycoproteomics</h3>
+                    <p>Targeted enrichment and gas-phase ion mobility (FAIMS/EThcD) for site-specific N- and O-glycoproteomics, intact glycomics, phosphoproteomics (including Arg-phosphorylation), and multi-PTM crosstalk.</p>
                 </div>
                 <div class="capability-column">
-                    <span class="capability-num">03 · Interactomics</span>
-                    <h3>Molecular Interactions &amp; XL-MS</h3>
-                    <p>RNA–protein cross-linking mass spectrometry (XL-MS) and affinity purification workflows to resolve dynamic ribonucleoprotein and signaling complexes.</p>
+                    <span class="capability-num">03 · Interactomics &amp; Complexes</span>
+                    <h3>Macromolecular Interactions &amp; XL-MS</h3>
+                    <p>Affinity purification mass spectrometry (AP-MS) and cross-linking mass spectrometry (XL-MS) to resolve dynamic protein–RNA and protein–protein architectures and regulatory assemblies.</p>
                 </div>
                 <div class="capability-column">
-                    <span class="capability-num">04 · Quality &amp; Reproducibility</span>
-                    <h3>Automated QC &amp; FAIR Informatics</h3>
-                    <p>Continuous instrument performance monitoring via <strong>Karuppar</strong> and standardized, reproducible reporting pipelines powered by the <strong>SILAMBU</strong> modular ecosystem.</p>
+                    <span class="capability-num">04 · Analytical Innovation &amp; Automation</span>
+                    <h3>Workflow Engineering &amp; Robotics</h3>
+                    <p>Next-generation micro-sample preparation (SP3), automated liquid-handling robotics, multi-protease multiplexing (GlycoPlex), and continuous performance tracking via the in-house <strong>Karuppar</strong> QC engine.</p>
+                </div>
+                <div class="capability-column">
+                    <span class="capability-num">05 · Proteome Informatics &amp; FAIR Data</span>
+                    <h3>Data Science &amp; Open Dissemination</h3>
+                    <p>Rigorous statistical workflows, custom interactive visualization (<strong>VizGlyProt</strong>, <strong>Magnum</strong>), and standardized, reproducible pipelines powered by the modular <strong>SILAMBU</strong> ecosystem with open PRIDE deposition.</p>
                 </div>
             </div>
         </div>
