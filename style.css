@@ -22,7 +22,7 @@
 
     /* Typography */
     --font-heading: 'Oswald', system-ui, -apple-system, sans-serif;
-    --font-body: 'Open Sans', system-ui, -apple-system, sans-serif;
+    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     --transition: all 0.35s cubic-bezier(0.25, 1, 0.5, 1);
 
     --max-width: 1360px;
@@ -340,26 +340,38 @@ img { max-width: 100%; display: block; }
 .about-links a:hover { color: var(--color-bg-teal) !important; }
 
 /* ==========================================================================
-   Dual Role Boxes
+   Role Boxes Triad
    ========================================================================== */
 .dual-role-container {
-    display: grid; grid-template-columns: 1fr 1fr; gap: 0; /* Seamless connection */
-    max-width: var(--max-width); margin: 0 auto;
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 0; /* Seamless connection */
+    max-width: var(--max-width); 
+    margin: 0 auto;
     border: 4px solid var(--color-text-main);
 }
 .role-box {
-    padding: 4rem 3rem; display: flex; flex-direction: column; align-items: flex-start;
+    padding: 3.5rem 2.5rem; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start;
 }
-.role-box h3 { font-size: 2.2rem; margin-bottom: 1.5rem; }
-.role-box p { font-size: 1.15rem; line-height: 1.6; margin-bottom: 3rem; flex: 1; }
+.role-box h3 { font-size: 1.85rem; margin-bottom: 1.25rem; line-height: 1.2; }
+.role-box p { font-size: 1.05rem; line-height: 1.65; margin-bottom: 2.5rem; flex: 1; }
 
 .role-box.navy { background: var(--color-bg-navy); color: #fff; }
 .role-box.navy h3 { color: #fff; }
-.role-box.navy p { color: rgba(255,255,255,0.8); }
+.role-box.navy p { color: rgba(255,255,255,0.85); }
 
 .role-box.peach { background: var(--color-bg-peach); color: var(--color-text-main); border-left: 4px solid var(--color-text-main); }
 .role-box.peach h3 { color: var(--color-text-main); }
-.role-box.peach p { color: rgba(43, 48, 76, 0.8); }
+.role-box.peach p { color: rgba(43, 48, 76, 0.85); }
+
+.role-box.teal { background: var(--color-bg-teal); color: #fff; border-left: 4px solid var(--color-text-main); }
+.role-box.teal h3 { color: #fff; }
+.role-box.teal p { color: rgba(255,255,255,0.92); }
+.role-box.teal .btn { border-color: #fff; color: #fff; }
+.role-box.teal .btn:hover { background: #fff; color: var(--color-bg-teal); }
 
 /* ==========================================================================
    The 3 Pillars Graphic
@@ -586,11 +598,14 @@ footer {
     .about-header { flex: none; }
     .hero-image-wrapper { flex: none; width: 100%; max-width: 480px; margin: 0 auto; }
 }
+@media (max-width: 992px) {
+    .dual-role-container { grid-template-columns: 1fr; }
+    .role-box.peach, .role-box.teal { border-left: none; border-top: 4px solid var(--color-text-main); }
+}
 @media (max-width: 768px) {
     .nav-links { display: none; }
     :root { --section-padding: 70px; }
-    .highlights-grid, .talks-list, .dual-role-container { grid-template-columns: 1fr; }
-    .role-box.peach { border-left: none; border-top: 4px solid var(--color-text-main); }
+    .highlights-grid, .talks-list { grid-template-columns: 1fr; }
     .project-info { padding: 2.5rem; }
     .hero-text h1 { font-size: 3rem; }
 }
