@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -65,12 +66,18 @@
                 </div>
                 <div class="about-text">
                     <div id="profile-about" style="font-size: 1.15rem; line-height: 1.8;"></div>
-                    <div class="hero-links about-links" style="margin-top: 1.5rem; justify-content: flex-start; flex-wrap: wrap;">
-                        <a id="hero-orcid" href="#" target="_blank" style="color: var(--color-bg-navy);">ORCID</a>
-                        <span class="divider" style="color: var(--color-bg-navy);">·</span>
-                        <a id="hero-pubmed" href="#" target="_blank" style="color: var(--color-bg-navy);">PubMed</a>
-                        <span class="divider" style="color: var(--color-bg-navy);">·</span>
-                        <a href="cv.html" style="color: var(--color-bg-navy);">Curriculum Vitae</a>
+                    
+                    <!-- Collaboration CTA & Author Chips (SILAMBU style) -->
+                    <div class="bio-contact-block" style="margin-top: 2rem; padding-top: 1.5rem; border-top: 2px solid rgba(43, 48, 76, 0.2);">
+                        <p style="font-size: 1.08rem; color: var(--color-bg-navy); margin-bottom: 1.25rem; font-weight: 500;">
+                            For collaborations or speaking invitations, please contact me at:
+                        </p>
+                        <div class="author-chip-group">
+                            <a id="cta-email" href="#" class="author-chip"><i class="fas fa-envelope"></i> Email</a>
+                            <a id="hero-orcid" href="#" target="_blank" class="author-chip"><i class="fab fa-orcid"></i> ORCID</a>
+                            <a id="hero-pubmed" href="#" target="_blank" class="author-chip"><i class="fas fa-book-medical"></i> PubMed</a>
+                            <a id="profile-resume" href="Alagesan_CV_2026.pdf" target="_blank" class="author-chip"><i class="fas fa-file-pdf"></i> Curriculum Vitae</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -93,12 +100,6 @@
                     <a href="https://kathiralagesan.github.io/SILAMBU/" target="_blank" class="btn outline-btn">Explore SILAMBU ↗</a>
                 </div>
             </div>
-            <!-- CTA Section -->
-            <div id="contact-cta" style="text-align: center; padding: 4rem 2rem 2rem;">
-                <p style="font-size: 1.2rem; color: var(--color-bg-navy); line-height: 1.8; max-width: 1000px; margin: 0 auto; white-space: normal;">
-                    For collaborations or speaking invitations, please contact me at <a id="cta-email" href="#" style="background-color: var(--color-bg-teal); color: #fff; padding: 0.4rem 1rem; border-radius: 4px; font-weight: 700; text-decoration: none; margin-left: 0.5rem; transition: background 0.3s; white-space: nowrap;">alagesan [at] mpusp.mpg.de</a>
-                </p>
-            </div>
         </section>
 
         <!-- Publication Highlights -->
@@ -117,17 +118,6 @@
                     </div>
                 </div>
                 <div class="highlights-grid" id="highlights-container"></div>
-            </div>
-        </section>
-
-        <!-- Research Experience -->
-        <section id="experience" class="section bg-peach">
-            <div class="section-content">
-                <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; border-bottom: 2px solid var(--color-text-main); padding-bottom: 0.75rem; margin-bottom: 2.5rem; gap: 1rem;">
-                    <h2 class="column-title" style="border-bottom: none; margin-bottom: 0; padding-bottom: 0;">Research Experience</h2>
-                    <a href="Alagesan_CV_2026.pdf" target="_blank" class="btn primary" style="font-size: 0.8rem; padding: 0.45rem 1.2rem;">Download Full CV (PDF) ↓</a>
-                </div>
-                <div class="timeline" id="experience-container"></div>
             </div>
         </section>
 
