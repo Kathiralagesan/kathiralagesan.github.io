@@ -1,32 +1,28 @@
 /* ==========================================================================
-   CSS Variables — True Bennett Tea Color Blocking
+   CSS Variables: KA. Portfolio Theme: Madurai Ruby
    ========================================================================== */
 :root {
-    --color-bg-peach: #fdeae8; /* Soft cream/peach base */
-    --color-bg-pink: #f6b1b7;  /* Bennett Pink */
-    --color-bg-navy: #2b304c;  /* Deep Navy */
-    --color-bg-teal: #4a8f79;  /* Sage/Teal */
-    
-    --color-text-main: #2b304c;
-    --color-text-light: #ffffff;
-    --color-text-muted: rgba(43, 48, 76, 0.7);
-    --color-text-muted-light: rgba(255, 255, 255, 0.7);
-    
-    --color-accent: #3898ec;
-    --color-border: rgba(43, 48, 76, 0.15);
-    
-    /* Colors for the 3 Pillars Cards */
-    --color-pillar-pink: #9a2b58;
-    --color-pillar-blue: #328ab8;
-    --color-pillar-green: #3f7b2c;
+  --color-bg-navy: #2C263E;
+  --color-bg-peach: #FAEEE7;
+  --color-bg-pink: #E8A3B1;
+  --color-bg-teal: #326F64;
+  --color-text-main: #2C263E;
+  --color-text-light: #FFFFFF;
+  --color-accent: #B4455B;
+  --color-border: rgba(44, 38, 62, 0.15);
+  --color-text-muted: rgba(44, 38, 62, 0.72);
+  --color-text-muted-light: rgba(255, 255, 255, 0.78);
+  --color-pillar-pink: #E8A3B1;
+  --color-pillar-blue: #B4455B;
+  --color-pillar-green: #326F64;
 
-    /* Typography */
-    --font-heading: 'Oswald', system-ui, -apple-system, sans-serif;
-    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    --transition: all 0.35s cubic-bezier(0.25, 1, 0.5, 1);
+  /* Typography */
+  --font-heading: 'Oswald', system-ui, -apple-system, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --transition: all 0.35s cubic-bezier(0.25, 1, 0.5, 1);
 
-    --max-width: 1360px;
-    --section-padding: 120px;
+  --max-width: 1360px;
+  --section-padding: 120px;
 }
 
 /* ==========================================================================
@@ -123,25 +119,25 @@ img { max-width: 100%; display: block; }
    Hero
    ========================================================================== */
 .hero {
-    padding: 180px 3rem 100px;
+    padding: 125px 3rem 60px;
     display: flex; align-items: center;
 }
 .hero-content {
     max-width: var(--max-width); margin: 0 auto;
-    display: flex; align-items: center; gap: 6rem;
+    display: flex; align-items: center; gap: 4rem;
 }
 .hero-text { flex: 1; }
 .hero-text h1 {
-    font-size: clamp(4rem, 7vw, 6rem); /* Huge, dramatic Oswald */
-    margin-bottom: 0.5rem; line-height: 1;
+    font-size: clamp(2.8rem, 5vw, 4.2rem);
+    margin-bottom: 0.4rem; line-height: 1.05;
 }
 .hero-title {
-    font-size: 1.5rem; font-weight: 600; color: var(--color-bg-pink); /* Contrast pop on navy */
-    margin-bottom: 0.5rem; font-family: var(--font-body);
+    font-size: 1.3rem; font-weight: 600; color: var(--color-bg-pink);
+    margin-bottom: 0.4rem; font-family: var(--font-body);
 }
 .hero-institution {
-    font-size: 1.1rem; color: var(--color-text-muted-light);
-    margin-bottom: 2.5rem;
+    font-size: 1.05rem; color: var(--color-text-muted-light);
+    margin-bottom: 0.85rem;
 }
 .hero-actions { display: flex; gap: 1.5rem; margin-bottom: 2.5rem; flex-wrap: wrap; }
 .hero-links { display: flex; align-items: center; gap: 1rem; font-size: 0.9rem; }
@@ -198,28 +194,29 @@ img { max-width: 100%; display: block; }
     color: #ffffff;
 }
 
-.hero-image-wrapper { flex: 0 0 380px; }
+.hero-image-wrapper { flex: 0 0 290px; }
 .hero-image-wrapper img {
-    width: 100%; height: 500px; object-fit: cover;
-    border: 4px solid var(--color-bg-pink); /* Add framed aesthetic */
+    width: 100%; height: 380px; object-fit: cover;
+    border: 3px solid var(--color-bg-pink);
+    border-radius: 4px;
 }
 
 /* ==========================================================================
    Tagline Banner
    ========================================================================== */
 .tagline-banner {
-    padding: 4.5rem 2rem;
+    padding: 3.2rem 2rem;
     text-align: center;
 }
 .tagline-content {
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 .tagline-banner h2 {
-    font-size: clamp(1.8rem, 2.7vw, 2.6rem);
+    font-size: clamp(1.6rem, 2.4vw, 2.3rem);
     font-weight: 700;
     line-height: 1.3;
-    margin-bottom: 1.25rem;
+    margin-bottom: 0.9rem;
     color: #ffffff;
     white-space: normal;
 }
@@ -230,11 +227,11 @@ img { max-width: 100%; display: block; }
 }
 .tagline-banner p,
 #profile-tagline-subtitle {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     font-style: italic;
-    line-height: 1.7;
+    line-height: 1.65;
     color: rgba(255, 255, 255, 0.95);
-    max-width: 900px;
+    max-width: 850px;
     margin: 0 auto;
 }
 
@@ -309,7 +306,7 @@ img { max-width: 100%; display: block; }
 }
 
 /* ==========================================================================
-   Sections — Layout
+   Sections: Layout
    ========================================================================== */
 .section { padding: var(--section-padding) 3rem; }
 .section-content { max-width: var(--max-width); margin: 0 auto; }
@@ -379,7 +376,7 @@ img { max-width: 100%; display: block; }
 }
 
 /* ==========================================================================
-   Role Boxes Triad
+   Role Boxes Triad & Subpage Boxes
    ========================================================================== */
 .dual-role-container {
     display: grid; 
@@ -388,6 +385,11 @@ img { max-width: 100%; display: block; }
     max-width: var(--max-width); 
     margin: 0 auto;
     border: 4px solid var(--color-text-main);
+}
+/* When used on subpages with 2 boxes */
+.dual-role-container:has(> :last-child:nth-child(2)),
+.dual-boxes-2 {
+    grid-template-columns: repeat(2, 1fr) !important;
 }
 .role-box {
     padding: 3.5rem 2.5rem; 
@@ -476,42 +478,147 @@ img { max-width: 100%; display: block; }
 }
 
 /* ==========================================================================
-   Publication Highlights (on Navy background)
+   Clean Publication List (Standard across all pages)
+   ========================================================================== */
+.platform-pub-list {
+    list-style: none;
+    padding: 0;
+    margin: 2.5rem 0 0 0;
+}
+.platform-pub-item {
+    padding: 1.4rem 0;
+    border-bottom: 1px solid rgba(43, 48, 76, 0.15);
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+.platform-pub-item:first-child {
+    border-top: 1px solid rgba(43, 48, 76, 0.15);
+}
+.platform-pub-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+.platform-pub-journal {
+    font-family: var(--font-heading);
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--color-accent);
+}
+.platform-pub-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--color-bg-navy);
+    text-decoration: none;
+    line-height: 1.45;
+    transition: opacity 0.2s;
+}
+.platform-pub-title:hover {
+    opacity: 0.7;
+    text-decoration: underline;
+}
+.platform-pub-desc {
+    font-size: 0.98rem;
+    color: var(--color-bg-navy);
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+/* Publication List on Navy (e.g. index.html Highlights) */
+#highlights .section-header-split {
+    margin-bottom: 2.2rem;
+}
+.bg-navy .platform-pub-item {
+    background: transparent !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    padding: 1.35rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+}
+.bg-navy .platform-pub-item:first-child {
+    border-top: 1px solid rgba(255, 255, 255, 0.16);
+}
+.bg-navy .platform-pub-journal {
+    color: var(--color-bg-pink);
+    font-size: 0.88rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+.bg-navy .platform-pub-title {
+    color: #ffffff;
+    font-size: 1.18rem;
+    font-weight: 600;
+    line-height: 1.45;
+}
+.bg-navy .platform-pub-title:hover {
+    color: var(--color-bg-pink);
+    opacity: 1;
+}
+.bg-navy .platform-pub-desc {
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 0.98rem;
+    line-height: 1.6;
+}
+
+/* ==========================================================================
+   Publication Highlights (2x2 Grid without Images)
    ========================================================================== */
 .pub-links-block { flex: 1; padding-top: 1rem; }
 .light-muted { font-size: 1.1rem; margin-bottom: 1.5rem; }
 .pub-external-links { display: flex; gap: 1rem; flex-wrap: wrap; }
 
 .highlights-grid {
-    display: grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); gap: 2rem;
-    margin-top: 4rem;
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 2rem;
+    margin-top: 3.5rem;
 }
 .highlight-card {
-    display: block; background: rgba(255,255,255,0.03);
-    border: 2px solid rgba(255,255,255,0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: rgba(255,255,255,0.04);
+    border: 2px solid rgba(255,255,255,0.22);
+    border-radius: 4px;
+    padding: 2.25rem;
     transition: var(--transition);
 }
-.highlight-card:hover { background: rgba(255,255,255,0.08); border-color: var(--color-bg-pink); }
-.highlight-img, .highlight-image-placeholder {
-    width: 100%; height: 260px; object-fit: cover;
-    background: rgba(249,197,209,0.1);
-    display: flex; align-items: center; justify-content: center;
-    font-size: 1rem; font-family: var(--font-heading); font-weight: 500;
-    color: rgba(255,255,255,0.3); transition: var(--transition);
-    border-bottom: 2px solid rgba(255,255,255,0.2);
+.highlight-card:hover { 
+    background: rgba(255,255,255,0.08); 
+    border-color: var(--color-bg-pink); 
+    transform: translateY(-3px);
 }
-.highlight-img.contain { object-fit: contain; background: rgba(255,255,255,0.05); padding: 1rem; }
-.highlight-card:hover .highlight-img { transform: scale(1.02); }
-.highlight-info { padding: 2rem; }
 .highlight-journal {
-    display: block; font-size: 0.8rem; font-weight: 700; text-transform: uppercase;
-    letter-spacing: 0.1em; color: var(--color-bg-pink); margin-bottom: 1rem;
+    display: block; font-size: 0.82rem; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.12em; color: var(--color-bg-pink); margin-bottom: 0.85rem;
 }
-.highlight-info h3 { font-size: 1.6rem; margin-bottom: 1rem; line-height: 1.3; }
-.highlight-info p { margin-bottom: 1.5rem; }
+.highlight-info h3 { 
+    font-size: 1.45rem; 
+    margin-bottom: 1rem; 
+    line-height: 1.25; 
+    color: #fff;
+    text-transform: uppercase;
+    font-family: var(--font-heading);
+}
+.highlight-info p { 
+    margin-bottom: 1.75rem; 
+    font-size: 1.02rem;
+    line-height: 1.65;
+    color: rgba(255,255,255,0.88);
+}
 .read-more {
-    font-size: 0.9rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em;
+    font-size: 0.88rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em;
     color: var(--color-bg-pink);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+.highlight-card:hover .read-more {
+    color: #fff;
 }
 
 /* ==========================================================================
@@ -623,6 +730,13 @@ footer {
         gap: 1rem;
     }
 }
+
+/* ==========================================================================
+   KA. Portfolio Theme Overrides: Madurai Ruby
+   ========================================================================== */
+.navbar { background: rgba(250, 238, 231, 0.96) !important; }
+.metrics-ribbon { background-color: #2C263E !important; }
+.role-box.peach p, .project-card p, .project-info p { color: rgba(44, 38, 62, 0.85) !important; }
 
 /* ==========================================================================
    Responsive

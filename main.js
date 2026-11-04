@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (scholarEl) scholarEl.href = p.googleScholarUrl;
 
     // Footer Last Updated Date
-    setText("last-update", p.lastUpdated || "19 Oct 2026");
+    setText("last-update", p.lastUpdated || "04 Nov 2026");
 
     // ── Helper to Render Alternating Cards ────────────────────────────────────────
     function renderCards(containerId, itemsArray) {
@@ -100,28 +100,21 @@ document.addEventListener("DOMContentLoaded", () => {
     // ── Independent Research ──────────────────────────────────────────────
     renderCards("research-container", data.researchPillars);
 
-    // ── Publication Highlights ──────────────────────────────────────────────
+    // ── Publication Highlights (Clean Editorial List Layout) ───
     const highlightsContainer = document.getElementById("highlights-container");
     if (highlightsContainer && data.publicationHighlights) {
         data.publicationHighlights.forEach(pub => {
-            const pubEl = document.createElement("a");
-            pubEl.className = "highlight-card";
-            pubEl.href = pub.link;
-            pubEl.target = "_blank";
-            pubEl.rel = "noopener noreferrer";
-
-            const imageHtml = pub.image
-                ? `<img src="${pub.image}" alt="${pub.title}" class="highlight-img">`
-                : `<div class="highlight-image-placeholder"><span>Graphical Abstract</span></div>`;
+            const pubEl = document.createElement("li");
+            pubEl.className = "platform-pub-item";
 
             pubEl.innerHTML = `
-                <div class="highlight-image-wrapper">${imageHtml}</div>
-                <div class="highlight-info">
-                    <span class="highlight-journal">${pub.journal}</span>
-                    <h3 class="serif-title small">${pub.title}</h3>
-                    <p>${pub.significance}</p>
-                    <span class="read-more">View Publication →</span>
+                <div class="platform-pub-meta">
+                    <span class="platform-pub-journal">${pub.journal}</span>
                 </div>
+                <a href="${pub.link}" target="_blank" rel="noopener noreferrer" class="platform-pub-title">
+                    ${pub.title} →
+                </a>
+                <span class="platform-pub-desc">${pub.significance}</span>
             `;
             highlightsContainer.appendChild(pubEl);
         });

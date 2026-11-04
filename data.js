@@ -4,7 +4,7 @@ const cvData = {
     title: "Project Leader in Proteomics",
     institution: "Max Planck Unit for the Science of Pathogens, Berlin, Germany",
     tagline: "Advancing Proteomics Through Analytical Innovation.",
-    taglineSubtitle: "Developing mass spectrometry methods, workflows, and open-source tools to characterize proteins, site-specific post-translational modifications, and molecular interactions in complex biological systems.",
+    taglineSubtitle: "Developing mass spectrometry methods, workflows, and open-source tools to characterize proteins, site-specific post-translational modifications, and molecular interactions.",
     email: "alagesan@mpusp.mpg.de",
     website: "www.mpusp.mpg.de",
     orcid: "0000-0002-7596-5558",
@@ -13,7 +13,7 @@ const cvData = {
     about: "<strong>In cellular systems, proteins rarely act in isolation</strong>: their biological functions are governed by dynamic post-translational modifications and macromolecular networks. As Project Leader in Proteomics at MPUSP, I direct the proteomics platform while pursuing independent research in <strong>analytical glycoproteomics and host–pathogen glycobiology</strong>.\n\nOver the past 15 years, I have developed mass spectrometry-based approaches in large-scale proteomics, glycoproteomics, and structural glycomics, with core <strong>expertise in site-specific glycopeptide analysis and isomeric glycan characterization</strong>. At MPUSP, I have expanded this foundation to broader post-translational modifications (PTMs), investigating PTM crosstalk, protein–RNA complexes, extracellular vesicles, and bacterial and human secretomes.\n\nMy approach combines automated robotics and microscale SP3 workflows with advanced hybrid mass spectrometry & fragmentation, and ion mobility separation. In parallel, as an Open Science Ambassador for the Max Planck Society, I develop open informatics tools, including the <strong>Karuppar MS-QC system</strong> within SILAMBU data suite ecosystem, adhering <strong>FAIR data practices</strong> to advance reproducibility across proteomics, glycomics, and glycoproteomics.",
     profileImage: "profile.jpg",
     resumeLink: "Alagesan_CV_2026.pdf",
-    lastUpdated: "19 Oct 2026"
+    lastUpdated: "04 Nov 2026"
   },
 
   platform: [
@@ -28,28 +28,28 @@ const cvData = {
 
   researchPillars: [
     {
-      id: "systems-glycobiology",
-      title: "Systems Glycobiology & Host-Pathogen Interactions",
-      description: "My core research investigates how protein glycosylation influences microbial pathogenesis and host immunity. By mapping complex human glycoproteomes—such as the GlycoAtlas initiative and blood group-specific plasma profiling—we aim to uncover how pathogens like S. pyogenes exploit or evade host glycan signatures during infection. This systems-level approach bridges fundamental glycobiology with translational infection dynamics.",
-      image: "images/Glyco_bacteria.jpg",
-      tags: ["Systems Glycobiology", "Infection Dynamics", "Human GlycoAtlas", "Host-Microbe"],
-      link: "research-glycobiology.html"
-    },
-    {
       id: "next-gen-proteomics",
       title: "Next-Generation Proteomic Technologies",
       description: "To tackle the immense micro- and macro-heterogeneity of glycoproteins, we develop robust, high-throughput analytical methodologies. We are breaking traditional analytical norms to improve glycopeptide coverage and resolve complex isomeric glycan structures in clinical and biological samples.",
-      image: "images/Glyco_illu.jpg",
+      image: "images/Illu_Glyco.svg",
       tags: ["Method Development", "Protease Multiplexing", "Isomeric Resolution", "Analytical Chemistry"],
-      link: "research-technologies.html"
+      link: "research.html"
+    },
+    {
+      id: "systems-glycobiology",
+      title: "Systems Glycobiology & Host-Pathogen Interactions",
+      description: "Bacteria reshape their proteomes to survive stress and infection. Our research investigates how protein glycosylation and post-translational remodeling govern microbial pathogenesis. By capturing dynamic proteome alterations, PTMs, and molecular interaction networks across both pathogen and host, we aim to uncover how major human pathogens, like S. pyogenes, exploit the host glycome to establish niche colonization and drive severe, invasive disease.",
+      image: "images/Bacteria.svg",
+      tags: ["Systems Glycobiology", "Infection Dynamics", "Host-Pathogen Interactions", "S. pyogenes"],
+      link: "research.html"
     },
     {
       id: "proteome-informatics",
       title: "Advanced Proteome Informatics",
-      description: "(Glyco)Proteomics is a data-rich field, but extracting biological meaning requires sophisticated tools. We are building the SILAMBU modular ecosystem—including VizGlyProt and Magnum—to seamlessly translate raw mass spectrometry data into structured biological knowledge. This framework emphasizes interactive data visualization, reproducible pipelines, and FAIR principles, culminating in the Proteomics Knowledgebase.",
-      image: "",
-      tags: ["FAIR Data", "Bioinformatics", "Data Visualization", "Open Science"],
-      link: "research-informatics.html"
+      description: "(Glyco)Proteomics is a data-rich field, but extracting biological meaning requires sophisticated tools. We are building the SILAMBU modular ecosystem to seamlessly translate raw mass spectrometry data into structured biological knowledge. This framework emphasizes interactive data visualization, reproducible pipelines, and FAIR principles, culminating in the Proteomics Knowledgebase.",
+      image: "images/Informatics.svg",
+      tags: ["FAIR Data", "Bioinformatics", "Data Visualization", "SILAMBU Ecosystem"],
+      link: "https://kathiralagesan.github.io/silambu/"
     }
   ],
 
@@ -58,18 +58,18 @@ const cvData = {
       title: "Infection Glycobiology",
       subtitle: "Systems Glycoproteomics & Host-Pathogen Interactions",
       quote: "Glycosylation is ubiquitous, yet its roles in host-pathogen interactions remain one of the least understood areas in molecular biology. We are changing that.",
-      mission: "We develop and apply high-end analytics to decipher the complex \"glycocode\" — decoding the structural diversity and functional implications of glycoconjugates produced by both host and pathogen.",
+      mission: "We develop and apply high-end analytics to decipher the complex \"glycocode\", decoding the structural diversity and functional implications of glycoconjugates produced by both host and pathogen.",
       focusHeading: "Core Research Focus",
       boxes: [
         {
           color: "navy",
           title: "The Human GlycoAtlas Initiative",
-          text: "Defining the baseline of human glycosylation is essential for understanding infection. We are comprehensively mapping site-specific N- and O-glycosylation across human tissues and plasma to establish a definitive reference framework — elucidating the precise receptor topologies that pathogens exploit for adhesion, invasion, and immune evasion."
+          text: "Defining the baseline of human glycosylation is essential for understanding infection. We are comprehensively mapping site-specific N- and O-glycosylation across human tissues and plasma to establish a definitive reference framework, elucidating the precise receptor topologies that pathogens exploit for adhesion, invasion, and immune evasion."
         },
         {
           color: "peach",
           title: "Infection Glycodynamics",
-          text: "Pathogens, including <em>S. pyogenes</em>, exploit highly specific glycan-lectin interactions to adhere, invade, and evade host immunity. We deploy advanced glycoproteomics to capture dynamic alterations in both host and bacterial glycoproteomes during infection — uncovering the molecular dialects that dictate virulence and inflammatory responses."
+          text: "Pathogens, including <em>S. pyogenes</em>, exploit highly specific glycan-lectin interactions to adhere, invade, and evade host immunity. We deploy advanced glycoproteomics to capture dynamic alterations in both host and bacterial glycoproteomes during infection, uncovering the molecular dialects that dictate virulence and inflammatory responses."
         }
       ],
       caseStudyHeading: "Translational Impact",
@@ -81,7 +81,7 @@ const cvData = {
         title: "Glycoconjugate Vaccine Engineering",
         paragraphs: [
           "Translating fundamental glycobiology into clinical therapeutics requires absolute structural certainty. By leveraging our next-generation MS analytical platforms, we guide the development of recombinant glycoconjugate vaccines for Group A <em>Streptococcus</em>.",
-          "We provide rigorous validation of <em>in vivo</em> carrier protein glycosylation — analyzing complex glycan heterogeneity, resolving isomeric structures, and confirming precise site occupancy. Our FAIMS-assisted nanoLC-MS/MS workflows detected glycopeptides containing up to <strong>41 rhamnose residues</strong> with full structural confirmation."
+          "We provide rigorous validation of <em>in vivo</em> carrier protein glycosylation, analyzing complex glycan heterogeneity, resolving isomeric structures, and confirming precise site occupancy. Our FAIMS-assisted nanoLC-MS/MS workflows detected glycopeptides containing up to <strong>41 rhamnose residues</strong> with full structural confirmation."
         ],
         tags: ["Vaccine Development", "Glycoconjugates", "FAIMS-MS", "Structural Validation"]
       }
@@ -91,13 +91,13 @@ const cvData = {
       title: "Next-Generation Technologies",
       subtitle: "Analytical Method Development & Workflow Innovation",
       quote: "To tackle the immense micro- and macro-heterogeneity of glycoconjugates, we develop robust, high-throughput analytical methodologies that break traditional norms.",
-      mission: "From protease multiplexing to EThcD fragmentation strategies — we continuously expand glycopeptide coverage and resolve complex isomeric structures.",
+      mission: "From protease multiplexing to EThcD fragmentation strategies, we continuously expand glycopeptide coverage and resolve complex isomeric structures.",
       focusHeading: "Our Methodological Innovations",
       boxes: [
         {
           color: "navy",
           title: "Sample Preparation",
-          text: "We apply and develop novel sample preparation strategies, including SP3, Mag-Resyn bead-based workflows, and multi-protease digestion strategies. Protease multiplexing with enzymes beyond trypsin — Lys-C, Glu-C, Asp-N — dramatically expands sequence coverage and exposes glycosylation sites hidden from conventional workflows."
+          text: "We apply and develop novel sample preparation strategies, including SP3, Mag-Resyn bead-based workflows, and multi-protease digestion strategies. Protease multiplexing with enzymes beyond trypsin (Lys-C, Glu-C, Asp-N) dramatically expands sequence coverage and exposes glycosylation sites hidden from conventional workflows."
         },
         {
           color: "peach",
@@ -109,12 +109,12 @@ const cvData = {
       caseStudy: {
         reverseLayout: false,
         image: "", // <-- Add your figure path here (e.g., "images/hcd_spectra.png")
-        placeholderText: "Figure Placeholder<br>HCD Spectra — NanA Glycopeptide",
+        placeholderText: "Figure Placeholder<br>HCD Spectra: NanA Glycopeptide",
         eyebrow: "npj Vaccines · 2025 · Collaboration with Dorfmueller Lab, Dundee",
         title: "Glycoconjugate Vaccine Development",
         paragraphs: [
-          "PROT contributed to a landmark study developing a recombinant production platform for Group A <em>Streptococcus</em> glycoconjugate vaccines — cost-effective, scalable vaccines generated through <em>in vivo</em> glycosylation of carrier proteins in <em>E. coli</em>.",
-          "Our FAIMS-assisted nanoLC-MS/MS workflow delivered site-specific glycopeptide identification, glycan heterogeneity analysis, and glycoprotein integrity validation — including the detection of glycopeptides carrying up to <strong>41 rhamnose residues</strong>. Full structural confirmation at this scale is a remarkable methodological achievement."
+          "PROT contributed to a landmark study developing a recombinant production platform for Group A <em>Streptococcus</em> glycoconjugate vaccines: cost-effective, scalable vaccines generated through <em>in vivo</em> glycosylation of carrier proteins in <em>E. coli</em>.",
+          "Our FAIMS-assisted nanoLC-MS/MS workflow delivered site-specific glycopeptide identification, glycan heterogeneity analysis, and glycoprotein integrity validation, including the detection of glycopeptides carrying up to <strong>41 rhamnose residues</strong>. Full structural confirmation at this scale is a remarkable methodological achievement."
         ],
         tags: ["FAIMS-MS/MS", "Glycopeptides", "Structural Validation", "Vaccine Platform"]
       }
@@ -123,19 +123,19 @@ const cvData = {
     informatics: {
       title: "Advanced Proteome Informatics",
       subtitle: "Data Science, Visualization & FAIR Principles",
-      quote: "(Glyco)Proteomics is a data-rich field — but extracting biological meaning requires sophisticated, reproducible, and open tools.",
-      mission: "We build the SILAMBU modular ecosystem — translating raw mass spectrometry data into structured, FAIR-compliant biological knowledge.",
+      quote: "(Glyco)Proteomics is a data-rich field, but extracting biological meaning requires sophisticated, reproducible, and open tools.",
+      mission: "We build the SILAMBU modular ecosystem, translating raw mass spectrometry data into structured, FAIR-compliant biological knowledge.",
       focusHeading: "Core Informatics Capabilities",
       boxes: [
         {
           color: "navy",
           title: "Software Tools & Pipelines",
-          text: "Development of robust bioinformatics pipelines for efficient data processing, peptide and protein identification, and quantification. We continuously evaluate multiple software strategies to optimize workflows — recognizing that no one-size-fits-all solution exists in proteomics data science."
+          text: "Development of robust bioinformatics pipelines for efficient data processing, peptide and protein identification, and quantification. We continuously evaluate multiple software strategies to optimize workflows, recognizing that no one-size-fits-all solution exists in proteomics data science."
         },
         {
           color: "peach",
           title: "Interactive KnowledgeBase",
-          text: "Building interactive knowledge bases to facilitate comprehensive data exploration, visualization, and dissemination. Improved FAIRness — Findability, Accessibility, Interoperability, and Reusability — is actively implemented across all our proteomics projects, culminating in the MPUSP Proteomics Knowledgebase."
+          text: "Building interactive knowledge bases to facilitate comprehensive data exploration, visualization, and dissemination. Improved FAIRness (Findability, Accessibility, Interoperability, and Reusability) is actively implemented across all our proteomics projects, culminating in the MPUSP Proteomics Knowledgebase."
         }
       ],
       caseStudyHeading: "Featured Tool",
@@ -146,7 +146,7 @@ const cvData = {
         eyebrow: "SILAMBU Ecosystem · Visualization Module",
         title: "Magnum Peptide Investigator",
         paragraphs: [
-          "Protein sequence coverage maps are essential to proteomics — showing how peptides distribute across their parent protein. <strong>Magnum</strong> was developed as an independent, interactive tool for visualizing peptide sequence coverage across multiple samples, while providing a comprehensive heatmap overview of individual peptide intensities.",
+          "Protein sequence coverage maps are essential to proteomics, showing how peptides distribute across their parent protein. <strong>Magnum</strong> was developed as an independent, interactive tool for visualizing peptide sequence coverage across multiple samples, while providing a comprehensive heatmap overview of individual peptide intensities.",
           "<em>Example: Peptide mapping of Fetuin across 10 human tissue lysates with interactive protein detection side panel.</em>"
         ],
         tags: ["Open Source", "Visualization", "FAIR Data", "Sequence Coverage"]
@@ -224,7 +224,7 @@ const cvData = {
       description: "Thesis: 'The Mass Spectrometry Toolkit for Glycoprotein Characterisation: Novel Analytical Methods for Glycomics and Glycoproteomics.'"
     },
     {
-      degree: "M.Sc. Biochemistry — Protein Science & Biotechnology",
+      degree: "M.Sc. Biochemistry | Protein Science & Biotechnology",
       institution: "University of Oulu, Finland",
       duration: "2010 – 2012",
       description: "Thesis: 'Novel methods for monosaccharide identification by mass spectrometry.'"
@@ -246,12 +246,12 @@ const cvData = {
     },
     {
       role: "Open Science Ambassador",
-      body: "Max Planck Society — MPUSP",
+      body: "Max Planck Society · MPUSP",
       year: "Since 2024",
       icon: "◈"
     },
     {
-      role: "Chair — MPUSP-HU Retreat",
+      role: "Chair · MPUSP-HU Retreat",
       body: "'Regulatory Mechanisms in Bacteria', Berlin",
       year: "2024",
       icon: "◈"
@@ -263,19 +263,19 @@ const cvData = {
       icon: "◈"
     },
     {
-      role: "Co-Chair — Gordon Research Seminar (GRS)",
+      role: "Co-Chair · Gordon Research Seminar (GRS)",
       body: "Glycobiology, co-chaired with Dr. Simon Wisnovsky",
       year: "2023",
       icon: "◈"
     },
     {
-      role: "Science Communicator — Long Night of Sciences",
+      role: "Science Communicator · Long Night of Sciences",
       body: "'Science Slam: Of Humans and Microbes', Berlin",
       year: "2023",
       icon: "◈"
     },
     {
-      role: "Planning — Max Planck MS Core Unit Network",
+      role: "Planning · Max Planck MS Core Unit Network",
       body: "Fostering collaboration across Max Planck Society MS platforms",
       year: "2022–",
       icon: "◈"
@@ -283,13 +283,13 @@ const cvData = {
   ],
 
   talks: [
-    "MPUSP-UCMR Mini-Symposium, Germany (2026) — 'The molecular playbook of bacterial survival: decoding proteome and glycome remodeling during stress and infection'",
-    "20th Central & Eastern European Proteomic Conference, Zagreb (2026) — 'Rebel, Rebel: Breaking Norms with Protease Multiplexing for Glycoproteomics'",
-    "AICTE Training & Learning Academy (2026) — 'From Amino to Glyco: The sweet side of proteomics'",
-    "MPUSP-HU Retreat, Schwerin (2025) — 'From Amino to Glyco: The Evolution of the Proteomics Research Platform'",
-    "IZW Seminar Series, Berlin (2024) — 'Sugar, Spice & Spectral Insights: (Glyco)Proteomics Unwrapped'",
-    "Technische Universität Berlin (2021) — 'The sweet side of proteomics' (invited by Prof. Juri Rappsilber)",
-    "ASBMB/EB Glycobiology Interest Group (2021) — 'Improved glycopeptide identification using FAIMS'"
+    "MPUSP-UCMR Mini-Symposium, Germany (2026) · 'The molecular playbook of bacterial survival: decoding proteome and glycome remodeling during stress and infection'",
+    "20th Central & Eastern European Proteomic Conference, Zagreb (2026) · 'Rebel, Rebel: Breaking Norms with Protease Multiplexing for Glycoproteomics'",
+    "AICTE Training & Learning Academy (2026) · 'From Amino to Glyco: The sweet side of proteomics'",
+    "MPUSP-HU Retreat, Schwerin (2025) · 'From Amino to Glyco: The Evolution of the Proteomics Research Platform'",
+    "IZW Seminar Series, Berlin (2024) · 'Sugar, Spice & Spectral Insights: (Glyco)Proteomics Unwrapped'",
+    "Technische Universität Berlin (2021) · 'The sweet side of proteomics' (invited by Prof. Juri Rappsilber)",
+    "ASBMB/EB Glycobiology Interest Group (2021) · 'Improved glycopeptide identification using FAIMS'"
   ]
 };
 
