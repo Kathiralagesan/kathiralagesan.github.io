@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (scholarEl) scholarEl.href = p.googleScholarUrl;
 
     // Footer Last Updated Date
-    setText("last-update", p.lastUpdated || "04 Nov 2026");
+    setText("last-update", p.lastUpdated || "06 Nov 2026");
 
     // ── Helper to Render Alternating Cards ────────────────────────────────────────
     function renderCards(containerId, itemsArray) {
@@ -114,26 +114,26 @@ document.addEventListener("DOMContentLoaded", () => {
                 <a href="${pub.link}" target="_blank" rel="noopener noreferrer" class="platform-pub-title">
                     ${pub.title} →
                 </a>
-                <span class="platform-pub-desc">${pub.significance}</span>
             `;
             highlightsContainer.appendChild(pubEl);
         });
     }
 
-    // ── Leadership & Service ──────────────────────────────────────────────
+    // ── Leadership & Service (Clean Linear List) ─────────────────────────
     const leadershipContainer = document.getElementById("leadership-container");
     if (leadershipContainer && data.leadershipAndService) {
         data.leadershipAndService.forEach(item => {
-            const el = document.createElement("div");
-            el.className = "leadership-card";
-            el.innerHTML = `
-                <div class="leadership-year">${item.year}</div>
-                <div class="leadership-content">
-                    <h3>${item.role}</h3>
-                    <p>${item.body}</p>
+            const li = document.createElement("li");
+            li.className = "cv-linear-item";
+            li.innerHTML = `
+                <span class="cv-item-year">${item.year}</span>
+                <div class="cv-item-content">
+                    <strong class="cv-item-role">${item.role}</strong>
+                    <span class="cv-item-sep">·</span>
+                    <span class="cv-item-body">${item.body}</span>
                 </div>
             `;
-            leadershipContainer.appendChild(el);
+            leadershipContainer.appendChild(li);
         });
     }
 

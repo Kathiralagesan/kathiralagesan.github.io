@@ -486,14 +486,10 @@ img { max-width: 100%; display: block; }
     margin: 2.5rem 0 0 0;
 }
 .platform-pub-item {
-    padding: 1.4rem 0;
-    border-bottom: 1px solid rgba(43, 48, 76, 0.15);
+    padding: 1.15rem 0;
     display: flex;
     flex-direction: column;
-    gap: 0.4rem;
-}
-.platform-pub-item:first-child {
-    border-top: 1px solid rgba(43, 48, 76, 0.15);
+    gap: 0.35rem;
 }
 .platform-pub-meta {
     display: flex;
@@ -536,11 +532,8 @@ img { max-width: 100%; display: block; }
     background: transparent !important;
     box-shadow: none !important;
     border-radius: 0 !important;
-    padding: 1.35rem 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.16);
-}
-.bg-navy .platform-pub-item:first-child {
-    border-top: 1px solid rgba(255, 255, 255, 0.16);
+    padding: 1.15rem 0;
+    border: none !important;
 }
 .bg-navy .platform-pub-journal {
     color: var(--color-bg-pink);
@@ -624,6 +617,58 @@ img { max-width: 100%; display: block; }
 /* ==========================================================================
    Leadership & Service
    ========================================================================== */
+.cv-linear-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+.cv-linear-item {
+    display: flex;
+    align-items: baseline;
+    gap: 1.5rem;
+    padding: 1.15rem 0;
+    border-bottom: 1px solid rgba(44, 38, 62, 0.12);
+}
+.cv-linear-item:last-child {
+    border-bottom: none;
+}
+.cv-item-year {
+    flex: 0 0 110px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--color-bg-teal);
+    font-family: var(--font-heading);
+    letter-spacing: 0.05em;
+}
+.cv-item-content {
+    flex: 1;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: var(--color-text-main);
+}
+.cv-item-role {
+    color: var(--color-bg-navy);
+    font-weight: 700;
+}
+.cv-item-sep {
+    margin: 0 0.4rem;
+    color: var(--color-bg-teal);
+    font-weight: 700;
+}
+.cv-item-body {
+    color: var(--color-text-main);
+}
+@media (max-width: 640px) {
+    .cv-linear-item {
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+    .cv-item-year {
+        flex: auto;
+    }
+}
 .leadership-grid {
     display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 0;
     border-top: 2px solid var(--color-text-main);
@@ -670,12 +715,33 @@ img { max-width: 100%; display: block; }
 .timeline-content li::before { content: '■'; position: absolute; left: 0; color: var(--color-bg-navy); font-size: 0.8rem; top: 0.3rem; }
 
 /* ==========================================================================
-   Talks
+   Talks (Clean Linear Academic List)
    ========================================================================== */
-.talks-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 0; }
+.talks-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.15rem;
+}
 .talk-item {
-    padding: 2rem 0; border-bottom: 1px solid rgba(255,255,255,0.2);
-    font-size: 1.1rem; padding-right: 2rem;
+    position: relative;
+    padding-left: 1.6rem;
+    font-size: 1.05rem;
+    line-height: 1.65;
+    color: rgba(255, 255, 255, 0.95);
+    border: none;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.talk-item::before {
+    content: "▪";
+    position: absolute;
+    left: 0;
+    color: #ffffff;
+    font-size: 0.9rem;
+    top: 0.05rem;
 }
 
 /* ==========================================================================

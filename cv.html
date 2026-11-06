@@ -12,56 +12,91 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <style>
-        .page-header { padding: 160px 3rem 60px; text-align: center; }
+        .page-header { padding: 135px 3rem 50px; text-align: center; }
 
-        /* Timeline on Peach (Experience) - Light, airy, high contrast */
+        /* Timeline on Peach (Experience) - High contrast & readable */
         .bg-peach .column-title {
             color: var(--color-bg-navy);
             border-bottom: 2px solid var(--color-bg-navy);
+            padding-bottom: 0.5rem;
+            margin-bottom: 2rem;
+            font-size: 2.2rem;
+            text-transform: uppercase;
         }
         .bg-peach .timeline-item {
             border-left: 3px solid var(--color-bg-teal);
         }
         .bg-peach .timeline-date {
-            color: var(--color-accent);
+            color: var(--color-bg-teal);
             font-weight: 700;
+            font-size: 0.95rem;
+            letter-spacing: 0.05em;
         }
         .bg-peach .timeline-content h3 {
             color: var(--color-bg-navy);
+            font-family: var(--font-heading);
+            font-size: 1.35rem;
+            text-transform: uppercase;
+            margin-top: 0.35rem;
+            margin-bottom: 0.4rem;
         }
         .bg-peach .timeline-content h4 {
-            color: var(--color-bg-teal);
+            color: var(--color-bg-navy);
             font-weight: 700;
+            font-size: 1.05rem;
+            margin-bottom: 0.75rem;
+            opacity: 0.9;
         }
         .bg-peach .timeline-content p,
         .bg-peach .timeline-content ul {
             color: var(--color-text-main);
+            font-size: 1.05rem;
+            line-height: 1.7;
         }
         .bg-peach .timeline-content li::before {
             color: var(--color-bg-teal);
         }
 
-        /* Timeline on Pink (Education) - Soft academic accent */
+        /* Timeline on Pink (Education) - Distinct section separation with 100% Deep Navy text (no pink-on-pink) */
         .bg-pink .column-title {
             color: var(--color-bg-navy);
             border-bottom: 2px solid var(--color-bg-navy);
+            padding-bottom: 0.5rem;
+            margin-bottom: 2rem;
+            font-size: 2.2rem;
+            text-transform: uppercase;
         }
         .bg-pink .timeline-item {
             border-left: 3px solid var(--color-bg-navy);
         }
         .bg-pink .timeline-date {
-            color: var(--color-accent);
+            color: var(--color-bg-navy);
             font-weight: 700;
+            font-size: 0.95rem;
+            letter-spacing: 0.05em;
         }
         .bg-pink .timeline-content h3 {
             color: var(--color-bg-navy);
+            font-family: var(--font-heading);
+            font-size: 1.35rem;
+            text-transform: uppercase;
+            margin-top: 0.35rem;
+            margin-bottom: 0.4rem;
         }
         .bg-pink .timeline-content h4 {
-            color: var(--color-accent);
+            color: var(--color-bg-navy);
             font-weight: 700;
+            font-size: 1.05rem;
+            margin-bottom: 0.75rem;
+            opacity: 0.92;
         }
         .bg-pink .timeline-content p {
-            color: rgba(44, 38, 62, 0.9);
+            color: rgba(44, 38, 62, 0.95);
+            font-size: 1.05rem;
+            line-height: 1.7;
+        }
+        .bg-pink .timeline-content li::before {
+            color: var(--color-bg-navy);
         }
     </style>
 </head>
@@ -83,26 +118,16 @@
 
     <!-- 1. Header (NAVY) -->
     <header class="page-header bg-navy">
-        <div class="hero-eyebrow">ACADEMIC &amp; PROFESSIONAL RECORD</div>
-        <h1 style="font-size: clamp(3rem, 5vw, 5rem);">Curriculum Vitae</h1>
-        <p style="font-size: 1.25rem; font-style: italic; color: rgba(255,255,255,0.9); margin-top: 1.2rem; max-width: 800px; margin-left: auto; margin-right: auto;">
-            Mass spectrometry infrastructure leadership, systems glycoproteomics, and open computational biology.
-        </p>
-        <div style="margin-top: 2.2rem;">
-            <a href="Alagesan_CV_2026.pdf" target="_blank" class="btn pub-btn">Download Full CV (PDF) ↓</a>
+        <div class="section-content">
+            <h1 style="font-size: clamp(2.8rem, 5vw, 4.8rem); margin: 0;">Alagesan · Curriculum Vitae</h1>
+            <div style="margin-top: 2rem;">
+                <a href="Alagesan_CV_2026.pdf" target="_blank" class="btn pub-btn">Download Full CV (PDF) ↓</a>
+            </div>
         </div>
     </header>
 
-    <!-- 2. Tagline Banner (TEAL) -->
-    <div class="tagline-banner bg-teal">
-        <div class="tagline-content">
-            <h2>Academic Leadership &amp; Scientific Trajectory</h2>
-            <p>Directing advanced mass spectrometry infrastructure, pioneering analytical glycoproteomics, and engineering open proteome informatics over 14+ years of continuous international research.</p>
-        </div>
-    </div>
-
     <main>
-        <!-- 3. Research Experience (PEACH) - Light, clear & breathable -->
+        <!-- 2. Research Experience (PEACH) -->
         <section id="experience" class="section bg-peach">
             <div class="section-content">
                 <h2 class="column-title">Research Experience</h2>
@@ -110,31 +135,26 @@
             </div>
         </section>
 
-        <!-- 4. Education (PINK) - Compact degree timeline -->
-        <section id="education" class="section bg-pink">
+        <!-- 3. Education (PINK) - Distinct visual separation with high-contrast Navy text -->
+        <section id="education" class="section bg-pink" style="padding: 4.5rem 2rem;">
             <div class="section-content">
                 <h2 class="column-title">Education</h2>
                 <div class="timeline" id="education-container"></div>
             </div>
         </section>
 
-        <!-- 5. Leadership & Service (PEACH) -->
-        <section id="leadership" class="section bg-peach">
+        <!-- 4. Leadership & Outreach (PEACH) - Clean Linear Academic List -->
+        <section id="leadership" class="section bg-peach" style="padding: 4.5rem 2rem;">
             <div class="section-content">
-                <div class="section-header-split">
-                    <div>
-                        <h2>Leadership &amp; Outreach</h2>
-                    </div>
-                    <p class="section-description">Peer recognition as an expert reviewer at national and international levels, alongside active commitments to open science, science communication, and community leadership.</p>
-                </div>
-                <div class="leadership-grid" id="leadership-container"></div>
+                <h2 class="column-title" style="margin-bottom: 2rem;">Leadership &amp; Outreach</h2>
+                <ul class="cv-linear-list" id="leadership-container"></ul>
             </div>
         </section>
 
-        <!-- 6. Talks (TEAL) -->
-        <section id="talks" class="section bg-teal">
+        <!-- 5. Talks (TEAL) - Clean Linear Academic List -->
+        <section id="talks" class="section bg-teal" style="padding: 4.5rem 2rem;">
             <div class="section-content">
-                <h2 class="column-title" style="border-bottom-color: rgba(255,255,255,0.2); color: #fff;">Invited Talks</h2>
+                <h2 class="column-title" style="border-bottom-color: rgba(255,255,255,0.2); color: #fff; margin-bottom: 2rem;">Invited Talks</h2>
                 <ul id="talks-container" class="talks-list"></ul>
             </div>
         </section>
